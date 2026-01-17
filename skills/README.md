@@ -1,6 +1,6 @@
 # Agent Skills
 
-This repository contains 27 skills available in this directory.
+This repository contains 28 skills available in this directory.
 
 ## Skills
 
@@ -149,6 +149,12 @@ This repository contains 27 skills available in this directory.
 **Description:** Professional Tailwind CSS development for both v3.x (legacy) and v4.x (latest). Use when working with Tailwind CSS for (1) writing or editing HTML/JSX/Vue/Svelte files with Tailwind utility classes, (2) answering questions about Tailwind utilities, syntax, or best practices, (3) configuring, installing, or setting up Tailwind in projects, (4) migrating from v3 to v4, (5) debugging Tailwind-related issues, (6) building responsive layouts, dark mode, or custom themes, or (7) any task involving Tailwind CSS utility classes, configuration, or documentation.
 
 **Resources:** 375 references • 1 JavaScript script
+
+### uiverse
+
+**Description:** Extract HTML and CSS code from UIVerse.io UI components. Use this when the user wants to get the code for a specific UIVerse component URL. It bypasses Cloudflare and returns clean HTML/CSS.
+
+**Resources:** 1 Python script
 
 ### v0-version-planner
 
