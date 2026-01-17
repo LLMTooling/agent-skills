@@ -116,9 +116,9 @@ This repository contains 27 skills available in this directory.
 
 ### react-19
 
-**Description:** |
+**Description:** Comprehensive React 19 development skill with 150+ official react.dev documents. Use when writing React components, hooks, Server Components, forms, or any React code. Covers state management (useState, useReducer, Context), effects (useEffect, useLayoutEffect), refs, performance optimization, React Compiler, Server Components ("use server", "use client"), Server Functions, form actions (useActionState, useFormStatus, useOptimistic), and all React DOM APIs. Includes full official documentation from react.dev organized by topic.
 
-**Resources:** 6 references
+**Resources:** 160 references
 
 ### ruff-dev
 

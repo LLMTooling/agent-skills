@@ -23,14 +23,25 @@ def parse_yaml_frontmatter(content: str) -> Optional[Dict[str, str]]:
     yaml_content = match.group(1)
     frontmatter = {}
 
-    # Parse name and description
-    name_match = re.search(r'^name:\s*(.+)$', yaml_content, re.MULTILINE)
-    desc_match = re.search(r'^description:\s*(.+)$', yaml_content, re.MULTILINE)
-
-    if name_match:
-        frontmatter['name'] = name_match.group(1).strip()
-    if desc_match:
-        frontmatter['description'] = desc_match.group(1).strip()
+    lines = yaml_content.splitlines()
+    for i, line in enumerate(lines):
+        if line.strip().startswith('name:'):
+            frontmatter['name'] = line.split(':', 1)[1].strip()
+        elif line.strip().startswith('description:'):
+            val = line.split(':', 1)[1].strip()
+            if val == '|':
+                # Multiline block
+                desc_lines = []
+                for j in range(i + 1, len(lines)):
+                    next_line = lines[j]
+                    # Stop if we hit a non-indented line that isn't empty
+                    if next_line.strip() and not next_line.startswith(' '):
+                        break
+                    if next_line.strip():
+                        desc_lines.append(next_line.strip())
+                frontmatter['description'] = ' '.join(desc_lines)
+            else:
+                frontmatter['description'] = val
 
     return frontmatter
 
