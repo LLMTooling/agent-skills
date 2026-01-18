@@ -1,6 +1,6 @@
 # Agent Skills
 
-This repository contains 34 skills available in this directory.
+This repository contains 35 skills available in this directory.
 
 ## Skills
 
@@ -179,6 +179,12 @@ This repository contains 34 skills available in this directory.
 **Description:** Comprehensive Three.js documentation and reference. Use when working with 3D graphics, WebGL, WebGPU, 3D scenes, geometries, materials, lights, cameras, animations, shaders, or the Three.js Shading Language (TSL). Includes all core APIs, addons, loaders, post-processing effects, and node-based materials. Essential for creating interactive 3D web applications, games, visualizations, or custom rendering pipelines.
 
 **Resources:** 781 references • 7 Python scripts
+
+### trpc
+
+**Description:** Comprehensive tRPC documentation and reference covering v10.x and v11.x. Use when working with tRPC (TypeScript Remote Procedure Call) for building end-to-end typesafe APIs. Includes complete documentation for client setup (React, Next.js, Tanstack Query, Vanilla), server configuration (routers, procedures, middleware, adapters), TypeDoc API reference, migration guides, and blog posts covering new features and best practices. Use this skill when (1) implementing tRPC in a project, (2) configuring tRPC client or server, (3) troubleshooting tRPC issues, (4) migrating between versions, (5) understanding tRPC concepts like procedures, routers, links, or context, or (6) integrating tRPC with frameworks like Next.js, Express, Fastify, or React Query.
+
+**Resources:** 341 references • 2 Python scripts
 
 ### uiverse
 

@@ -38,6 +38,7 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **svelte5**: Comprehensive guide for Svelte 5 (runes, components, SvelteKit).
 *   **tailwind-css**: Professional development with Tailwind CSS (v3 and v4).
 *   **threejs**: Comprehensive Three.js documentation and reference for 3D graphics.
+*   **trpc**: Comprehensive tRPC documentation and reference covering v10.x and v11.x.
 *   **zod**: TypeScript-first schema validation with static type inference.
 
 ### Utilities & Tools
