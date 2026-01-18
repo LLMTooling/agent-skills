@@ -17,6 +17,7 @@ For more detailed information, visit [agentskills.io](https://agentskills.io/hom
 This repository includes a variety of skills located in the `skills/` directory:
 
 ### Development & Frameworks
+*   **auto-animate**: Zero-config animation utility (AutoAnimate) for smooth transitions.
 *   **biome**: Comprehensive integration for Biome (linting, formatting) in TypeScript/JavaScript.
 *   **code-cleanup-final-pass**: Deep code review and cleanup workflow for final quality checks.
 *   **eslint**: Professional-grade ESLint setup and management for JS/TS projects.
@@ -24,15 +25,20 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **go-best-practices**: Go development guidelines based on Google's Go Style Guide.
 *   **home-assistant-dev**: Development guide for Home Assistant custom integrations.
 *   **ink-tui**: Build interactive Terminal User Interfaces (TUIs) with React and Ink.
+*   **lenis**: Lightweight smooth scroll library documentation and implementation.
 *   **modern-frontend-design**: Principles for creating high-quality, modern frontend interfaces.
 *   **mypy**: Static type checking for Python.
 *   **pydantic-dev**: Data validation and serialization with Pydantic v2.
+*   **radix-ui**: Comprehensive documentation for Radix UI (Themes, Primitives, Colors).
 *   **react-19**: Documentation and features for React 19.
+*   **react-three-fiber**: Guide for building 3D experiences with React Three Fiber (R3F).
 *   **ruff-dev**: Extremely fast Python linting and formatting with Ruff.
 *   **rust-dev**: Rust development best practices and tooling.
 *   **shadcn**: Guide for using shadcn/ui components and theming.
 *   **svelte5**: Comprehensive guide for Svelte 5 (runes, components, SvelteKit).
 *   **tailwind-css**: Professional development with Tailwind CSS (v3 and v4).
+*   **threejs**: Comprehensive Three.js documentation and reference for 3D graphics.
+*   **zod**: TypeScript-first schema validation with static type inference.
 
 ### Utilities & Tools
 *   **get-time**: Utilities to retrieve current local time and date.
@@ -42,6 +48,7 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **motion**: Animation library guide for React, vanilla JS, and Vue.
 *   **pdf-to-markdown**: Convert PDF documents to LLM-friendly Markdown.
 *   **plugin-builder**: Build, package, and publish Claude Code plugins.
+*   **uiverse**: Extract HTML and CSS code from UIVerse.io UI components.
 *   **v0-version-planner**: Planning tool for validating dependency versions before prototyping.
 *   **web-scraper**: Web scraping utility with Cloudflare bypass capabilities.
 
