@@ -1,8 +1,14 @@
 # Agent Skills
 
-This repository contains 29 skills available in this directory.
+This repository contains 34 skills available in this directory.
 
 ## Skills
+
+### auto-animate
+
+**Description:** Comprehensive AutoAnimate documentation and implementation guide (v0.9.0). Zero-config animation utility that adds smooth transitions to web apps with a single line of code. Use when working with AutoAnimate (@formkit/auto-animate) in any context including implementation, debugging, configuration, custom plugins, or framework integration (React, Vue, Solid, Svelte, Angular, Preact, Qwik, Nuxt). Covers installation, usage patterns, examples, source code analysis, and advanced features like custom animations and disable/enable functionality.
+
+**Resources:** 64 references • 3 Python scripts
 
 ### biome
 
@@ -62,6 +68,12 @@ This repository contains 29 skills available in this directory.
 
 **Resources:** 60 references
 
+### lenis
+
+**Description:** Comprehensive documentation and reference for Lenis, a lightweight smooth scroll library by darkroom.engineering. Use when working with Lenis smooth scroll implementation, including installation, configuration, API usage (methods, properties, events), React/Vue/Nuxt integration, scroll snapping, troubleshooting, or implementing smooth scrolling experiences with WebGL sync, parallax effects, and custom scroll behavior. Includes complete API reference, framework integrations, examples, and best practices.
+
+**Resources:** 11 references • 1 Python script
+
 ### local-skill-creator
 
 **Description:** Local skill creation toolkit for Claude Code. Use when users want to create, edit, or package skills locally on their PC using Claude Code. This skill provides all tools, templates, and guidance for building complete skills that can be distributed as .skill files. Works entirely in the current working directory.
@@ -114,11 +126,23 @@ This repository contains 29 skills available in this directory.
 
 **Resources:** 156 references
 
+### radix-ui
+
+**Description:** Comprehensive documentation for Radix UI - a complete design system including Themes (pre-styled components), Primitives (unstyled accessible components), and Colors (color system). Use when building React applications with Radix UI components, implementing accessible UI patterns, theming applications, or working with Radix's color system. Covers installation, components, styling, theming, accessibility, animations, and best practices.
+
+**Resources:** 121 references • 3 Python scripts
+
 ### react-19
 
 **Description:** Comprehensive React 19 development skill with 150+ official react.dev documents. Use when writing React components, hooks, Server Components, forms, or any React code. Covers state management (useState, useReducer, Context), effects (useEffect, useLayoutEffect), refs, performance optimization, React Compiler, Server Components ("use server", "use client"), Server Functions, form actions (useActionState, useFormStatus, useOptimistic), and all React DOM APIs. Includes full official documentation from react.dev organized by topic.
 
 **Resources:** 160 references
+
+### react-three-fiber
+
+**Description:** Comprehensive React Three Fiber (R3F) documentation and guidance for building 3D experiences in React. Use when working with React Three Fiber, @react-three/fiber package, declarative 3D rendering in React, Three.js with React integration, or any R3F-related development tasks including Canvas setup, hooks (useFrame, useThree, useLoader), events, objects, animations, performance optimization, testing, TypeScript integration, loading models/textures, or troubleshooting R3F applications.
+
+**Resources:** 25 references • 6 scripts (2 JavaScript, 4 Python)
 
 ### ruff-dev
 
@@ -173,3 +197,9 @@ This repository contains 29 skills available in this directory.
 **Description:** Web scraping with Cloudflare bypass capability. Use when Claude needs to fetch content from websites that may have bot protection, especially sites protected by Cloudflare. Automatically converts HTML to clean markdown format for easy processing. Use for retrieving documentation, articles, or any web content that needs to be analyzed or processed.
 
 **Resources:** 1 Python script
+
+### zod
+
+**Description:** Comprehensive documentation and reference for Zod, the TypeScript-first schema validation library with static type inference. Use when working with Zod schemas, validation, type inference, error handling, or any Zod-related development tasks. Includes complete API documentation, usage guides, ecosystem integrations, package references, migration guides, and all official Zod documentation from both zod.dev and the GitHub repository.
+
+**Resources:** 52 references • 3 Python scripts
