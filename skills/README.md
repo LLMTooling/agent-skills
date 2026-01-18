@@ -1,6 +1,6 @@
 # Agent Skills
 
-This repository contains 28 skills available in this directory.
+This repository contains 29 skills available in this directory.
 
 ## Skills
 
@@ -149,6 +149,12 @@ This repository contains 28 skills available in this directory.
 **Description:** Professional Tailwind CSS development for both v3.x (legacy) and v4.x (latest). Use when working with Tailwind CSS for (1) writing or editing HTML/JSX/Vue/Svelte files with Tailwind utility classes, (2) answering questions about Tailwind utilities, syntax, or best practices, (3) configuring, installing, or setting up Tailwind in projects, (4) migrating from v3 to v4, (5) debugging Tailwind-related issues, (6) building responsive layouts, dark mode, or custom themes, or (7) any task involving Tailwind CSS utility classes, configuration, or documentation.
 
 **Resources:** 375 references • 1 JavaScript script
+
+### threejs
+
+**Description:** Comprehensive Three.js documentation and reference. Use when working with 3D graphics, WebGL, WebGPU, 3D scenes, geometries, materials, lights, cameras, animations, shaders, or the Three.js Shading Language (TSL). Includes all core APIs, addons, loaders, post-processing effects, and node-based materials. Essential for creating interactive 3D web applications, games, visualizations, or custom rendering pipelines.
+
+**Resources:** 781 references • 7 Python scripts
 
 ### uiverse
 
