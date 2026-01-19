@@ -1,6 +1,6 @@
 # Agent Skills
 
-This repository contains 35 skills available in this directory.
+This repository contains 36 skills available in this directory.
 
 ## Skills
 
@@ -25,6 +25,12 @@ This repository contains 35 skills available in this directory.
 **Description:** Professional-grade ESLint development for JavaScript and TypeScript projects. Use when working with ESLint for (1) configuring ESLint in projects, (2) understanding or fixing ESLint errors and warnings, (3) creating or modifying ESLint rules, (4) integrating ESLint into build systems or editors, (5) migrating ESLint configurations, (6) setting up custom parsers or plugins, (7) troubleshooting ESLint issues, (8) implementing code quality standards, or (9) any task involving ESLint setup, configuration, or usage. Covers all ESLint versions with focus on v9+ flat config format.
 
 **Resources:** 397 references • 1 Python script
+
+### gemini-collaborate
+
+**Description:** Agentic collaboration with Google Gemini via CLI for tasks leveraging Gemini's ~1M token context window (~5x Claude's). Use when needing to review large codebases, analyze many files simultaneously, get a second AI opinion, search Google for current information, brainstorm ideas, or validate approaches. Triggers include code review of large projects, analyzing entire repositories, bulk file processing, getting alternative perspectives, searching for recent information via Google, or any task benefiting from Gemini's massive context capacity.
+
+**Resources:** 1 reference • 3 Python scripts
 
 ### gemini-genkit
 

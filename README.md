@@ -21,6 +21,7 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **biome**: Comprehensive integration for Biome (linting, formatting) in TypeScript/JavaScript.
 *   **code-cleanup-final-pass**: Deep code review and cleanup workflow for final quality checks.
 *   **eslint**: Professional-grade ESLint setup and management for JS/TS projects.
+*   **gemini-collaborate**: Agentic collaboration with Google Gemini for large-context code reviews and analysis.
 *   **gemini-genkit**: Guide for building AI apps with Google's Gemini API and Firebase Genkit.
 *   **go-best-practices**: Go development guidelines based on Google's Go Style Guide.
 *   **home-assistant-dev**: Development guide for Home Assistant custom integrations.
