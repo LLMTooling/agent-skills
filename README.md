@@ -20,6 +20,7 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **auto-animate**: Zero-config animation utility (AutoAnimate) for smooth transitions.
 *   **biome**: Comprehensive integration for Biome (linting, formatting) in TypeScript/JavaScript.
 *   **code-cleanup-final-pass**: Deep code review and cleanup workflow for final quality checks.
+*   **electron**: Complete Electron documentation for building cross-platform desktop applications with JavaScript, HTML, and CSS.
 *   **eslint**: Professional-grade ESLint setup and management for JS/TS projects.
 *   **gemini-collaborate**: Agentic collaboration with Google Gemini for large-context code reviews and analysis.
 *   **gemini-genkit**: Guide for building AI apps with Google's Gemini API and Firebase Genkit.

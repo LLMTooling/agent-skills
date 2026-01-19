@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python skills/generate_readme.py:*)",
+      "Bash(python:*)"
+    ]
+  }
+}

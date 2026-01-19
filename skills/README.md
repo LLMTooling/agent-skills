@@ -1,6 +1,6 @@
 # Agent Skills
 
-This repository contains 36 skills available in this directory.
+This repository contains 37 skills available in this directory.
 
 ## Skills
 
@@ -19,6 +19,12 @@ This repository contains 36 skills available in this directory.
 ### code-cleanup-final-pass
 
 **Description:** Deep code review and cleanup workflow for performing a final quality pass before committing code or opening pull requests. Use when the user wants to review and clean up a codebase to ensure production-ready quality, eliminate technical debt, remove debug code, simplify overcomplicated logic, or prepare code for public repository contribution. Triggers include "final pass", "cleanup before commit", "review before PR", "clean up this code", "prepare for production", or any request to audit and improve code quality across a project.
+
+### electron
+
+**Description:** "Complete Electron documentation reference for building cross-platform desktop applications with JavaScript, HTML, and CSS. Use when Claude needs to: (1) Create or modify Electron applications, (2) Work with Electron APIs (main process, renderer process, IPC, windows, menus, etc.), (3) Implement Electron features like auto-updater, notifications, tray icons, native modules, (4) Handle Electron-specific concerns like security, sandboxing, packaging, distribution, (5) Debug or troubleshoot Electron applications, (6) Understand Electron's process model and architecture, (7) Reference Electron API methods, events, and structures."
+
+**Resources:** 241 references
 
 ### eslint
 
