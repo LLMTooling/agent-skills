@@ -21,6 +21,8 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **biome**: Comprehensive integration for Biome (linting, formatting) in TypeScript/JavaScript.
 *   **code-cleanup-final-pass**: Deep code review and cleanup workflow for final quality checks.
 *   **electron**: Complete Electron documentation for building cross-platform desktop applications with JavaScript, HTML, and CSS.
+*   **electron-builder**: Electron app packaging and distribution configuration for macOS, Windows, and Linux.
+*   **electron-vite**: Build Electron apps with Vite.
 *   **eslint**: Professional-grade ESLint setup and management for JS/TS projects.
 *   **gemini-collaborate**: Agentic collaboration with Google Gemini for large-context code reviews and analysis.
 *   **gemini-genkit**: Guide for building AI apps with Google's Gemini API and Firebase Genkit.
@@ -28,8 +30,9 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **home-assistant-dev**: Development guide for Home Assistant custom integrations.
 *   **ink-tui**: Build interactive Terminal User Interfaces (TUIs) with React and Ink.
 *   **lenis**: Lightweight smooth scroll library documentation and implementation.
+*   **lucide-react**: Lucide React icon toolkit for React applications.
 *   **modern-frontend-design**: Principles for creating high-quality, modern frontend interfaces.
-*   **mypy**: Static type checking for Python.
+*   **mypy**: Professional static type checking for Python.
 *   **pydantic-dev**: Data validation and serialization with Pydantic v2.
 *   **radix-ui**: Comprehensive documentation for Radix UI (Themes, Primitives, Colors).
 *   **react-19**: Documentation and features for React 19.
@@ -41,6 +44,7 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **tailwind-css**: Professional development with Tailwind CSS (v3 and v4).
 *   **threejs**: Comprehensive Three.js documentation and reference for 3D graphics.
 *   **trpc**: Comprehensive tRPC documentation and reference covering v10.x and v11.x.
+*   **vite**: Vite 7.x build tool documentation for core configuration, dev server, and HMR.
 *   **zod**: TypeScript-first schema validation with static type inference.
 
 ### Utilities & Tools
