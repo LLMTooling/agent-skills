@@ -4,6 +4,12 @@ This repository contains 41 skills available in this directory.
 
 ## Skills
 
+### astro-build
+
+**Description:** Comprehensive documentation for Astro, the web framework for content-driven websites. Covers Getting Started, Concepts, Guides, Recipes, and API References. Use this skill when you need to answer questions about Astro, build Astro projects, or troubleshoot Astro code.
+
+**Resources:** 239 references
+
 ### auto-animate
 
 **Description:** Comprehensive AutoAnimate documentation and implementation guide (v0.9.0). Zero-config animation utility that adds smooth transitions to web apps with a single line of code. Use when working with AutoAnimate (@formkit/auto-animate) in any context including implementation, debugging, configuration, custom plugins, or framework integration (React, Vue, Solid, Svelte, Angular, Preact, Qwik, Nuxt). Covers installation, usage patterns, examples, source code analysis, and advanced features like custom animations and disable/enable functionality.
