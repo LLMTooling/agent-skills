@@ -1,0 +1,25 @@
+# Recipes Index
+
+This index lists documents related to **recipes**.
+
+- [Installing a Vite or Rollup plugin](en-recipes-add-yaml-support.md)
+- [Analyze bundle size](en-recipes-analyze-bundle-size.md)
+- [Build a custom image component](en-recipes-build-custom-img-component.md)
+- [Build forms with API routes](en-recipes-build-forms-api.md)
+- [Build HTML forms in Astro pages](en-recipes-build-forms.md)
+- [Use Bun with Astro](en-recipes-bun.md)
+- [Call endpoints from the server](en-recipes-call-endpoints.md)
+- [Verify a Captcha](en-recipes-captcha.md)
+- [Customize file names in the build output](en-recipes-customizing-output-filenames.md)
+- [Build your Astro site with Docker](en-recipes-docker.md)
+- [Dynamically import images](en-recipes-dynamically-importing-images.md)
+- [Add icons to external links](en-recipes-external-links.md)
+- [Add i18n features](en-recipes-i18n.md)
+- [Create a dev toolbar app](en-recipes-making-toolbar-apps.md)
+- [Add last modified time](en-recipes-modified-time.md)
+- [Add reading time](en-recipes-reading-time.md)
+- [Add an RSS feed](en-recipes-rss.md)
+- [Share state between islands](en-recipes-sharing-state-islands.md)
+- [Share state between Astro components](en-recipes-sharing-state.md)
+- [Using streaming to improve page performance](en-recipes-streaming-improve-page-performance.md)
+- [Style rendered Markdown with Tailwind Typography](en-recipes-tailwind-rendered-markdown.md)
