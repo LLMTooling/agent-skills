@@ -1,6 +1,6 @@
 # Agent Skills
 
-This repository contains 38 skills available in this directory.
+This repository contains 41 skills available in this directory.
 
 ## Skills
 
@@ -31,6 +31,18 @@ This repository contains 38 skills available in this directory.
 **Description:** "Complete Electron documentation reference for building cross-platform desktop applications with JavaScript, HTML, and CSS. Use when Claude needs to: (1) Create or modify Electron applications, (2) Work with Electron APIs (main process, renderer process, IPC, windows, menus, etc.), (3) Implement Electron features like auto-updater, notifications, tray icons, native modules, (4) Handle Electron-specific concerns like security, sandboxing, packaging, distribution, (5) Debug or troubleshoot Electron applications, (6) Understand Electron's process model and architecture, (7) Reference Electron API methods, events, and structures."
 
 **Resources:** 241 references
+
+### electron-builder
+
+**Description:** "Electron app packaging and distribution configuration for macOS, Windows, and Linux. Use when: (1) Configuring electron-builder in package.json or electron-builder.{yml,json5}, (2) Setting up code signing for any platform, (3) Creating distributables (dmg, nsis, appimage, etc.), (4) Configuring auto-update/publishing, (5) Debugging build failures or packaging issues."
+
+**Resources:** 40 references • 1 Python script
+
+### electron-vite
+
+**Description:** Build Electron apps with Vite. Use when creating, configuring, or troubleshooting Electron + Vite applications, including setup, hot reload, HMR, packaging, and integrating React/Vue with electron-vite. Covers electron-builder configuration, C/C++ addons, dependency pre-bundling, debugging, and all electron-vite plugins.
+
+**Resources:** 18 references
 
 ### eslint
 
@@ -97,6 +109,12 @@ This repository contains 38 skills available in this directory.
 **Description:** Local skill creation toolkit for Claude Code. Use when users want to create, edit, or package skills locally on their PC using Claude Code. This skill provides all tools, templates, and guidance for building complete skills that can be distributed as .skill files. Works entirely in the current working directory.
 
 **Resources:** 2 references • 3 Python scripts
+
+### lucide-react
+
+**Description:** "Comprehensive guide for Lucide React - the beautiful & consistent icon toolkit for React. Use when: installing lucide-react, importing and using icon components, customizing icon appearance (size, color, stroke width), finding and selecting icons, implementing advanced patterns like DynamicIcon and animations, handling accessibility for icons."
+
+**Resources:** 4 references
 
 ### modern-frontend-design
 
@@ -215,6 +233,12 @@ This repository contains 38 skills available in this directory.
 **Description:** Systematic version planning before starting v0 (initial prototype) development. Use when the user wants to validate and update dependency versions in project blueprints, technical plans, or before starting development on a new project. Checks that all specified library/framework versions are current stable releases to prevent technical debt. Triggers on phrases like "check versions", "update blueprint dependencies", "plan v0 development", "validate tech stack versions", or when starting a new project with a technical blueprint.
 
 **Resources:** 2 references
+
+### vite
+
+**Description:** Comprehensive Vite 7.x build tool documentation for core configuration, development server, build optimization, plugin API, and HMR. Use when Claude needs to work with Vite - creating or configuring vite.config.js/ts, setting up dev server with HMR, configuring build options and optimization, writing Vite plugins, troubleshooting Vite issues, migrating to Vite, environment and mode configuration, asset handling and static deployment. This is the core Vite skill - use vite-electron or vite-react for framework-specific integration.
+
+**Resources:** 34 references • 1 Python script
 
 ### web-scraper
 
