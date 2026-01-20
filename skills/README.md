@@ -1,6 +1,6 @@
 # Agent Skills
 
-This repository contains 37 skills available in this directory.
+This repository contains 38 skills available in this directory.
 
 ## Skills
 
@@ -8,7 +8,7 @@ This repository contains 37 skills available in this directory.
 
 **Description:** Comprehensive documentation for Astro, the web framework for content-driven websites. Covers Getting Started, Concepts, Guides, Recipes, and API References. Use this skill when you need to answer questions about Astro, build Astro projects, or troubleshoot Astro code.
 
-**Resources:** 214 references
+**Resources:** 239 references
 
 ### auto-animate
 
