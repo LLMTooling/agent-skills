@@ -17,6 +17,7 @@ For more detailed information, visit [agentskills.io](https://agentskills.io/hom
 This repository includes a variety of skills located in the `skills/` directory:
 
 ### Development & Frameworks
+*   **astro-build**: Comprehensive documentation for Astro, the web framework for content-driven websites.
 *   **auto-animate**: Zero-config animation utility (AutoAnimate) for smooth transitions.
 *   **biome**: Comprehensive integration for Biome (linting, formatting) in TypeScript/JavaScript.
 *   **code-cleanup-final-pass**: Deep code review and cleanup workflow for final quality checks.

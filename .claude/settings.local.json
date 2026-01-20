@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(python skills/generate_readme.py:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(gh pr view:*)",
+      "Bash(gh api:*)",
+      "Bash(gh pr checkout:*)",
+      "Bash(wc:*)"
     ]
   }
 }
