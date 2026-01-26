@@ -6,7 +6,9 @@
       "Bash(gh pr view:*)",
       "Bash(gh api:*)",
       "Bash(gh pr checkout:*)",
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "Bash(unzip:*)",
+      "Bash(ls:*)"
     ]
   }
 }

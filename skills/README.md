@@ -1,6 +1,6 @@
 # Agent Skills
 
-This repository contains 41 skills available in this directory.
+This repository contains 57 skills available in this directory.
 
 ## Skills
 
@@ -16,11 +16,23 @@ This repository contains 41 skills available in this directory.
 
 **Resources:** 64 references • 3 Python scripts
 
+### best-practices
+
+**Description:** Universal software engineering best practices for any language or project. Use when programming, refactoring code, designing systems, reviewing code, or ensuring production-ready quality. Covers fundamental principles (SOLID, DRY, KISS, YAGNI), architectural patterns (SoC, SSOT, LoD, CQS, DbC), and operational reliability (ETC, PoLP, CoC, Idempotency). Apply when building new features, cleaning up codebases, improving maintainability, or ensuring code follows industry standards.
+
+**Resources:** 2 references
+
 ### biome
 
 **Description:** Comprehensive Biome (biomejs.dev) integration for professional TypeScript/JavaScript development. Use for linting, formatting, code quality, and flawless Biome integration into codebases. Covers installation, configuration, migration from ESLint/Prettier, all linter rules, formatter options, CLI usage, editor integration, monorepo setup, and CI/CD integration. Use when working with Biome tooling, configuring biome.json, setting up linting/formatting, migrating projects, debugging Biome issues, or implementing production-ready Biome workflows.
 
 **Resources:** 57 references • 1 Python script
+
+### claude-code-hooks
+
+**Description:** Interactive skill for setting up Claude Code hooks in any workspace. Use when users want to configure hooks for Claude Code, create automation around tool execution, add notifications, format code automatically, protect files, validate commands, log operations, or customize Claude Code behavior. Triggers include "set up hooks", "create hook", "configure Claude Code", "add PreToolUse hook", "PostToolUse automation", "notification hook", "protect files from editing", or any request to automate Claude Code's behavior through hooks.
+
+**Resources:** 2 references • 3 Python scripts
 
 ### code-cleanup-final-pass
 
@@ -38,6 +50,12 @@ This repository contains 41 skills available in this directory.
 
 **Resources:** 40 references • 1 Python script
 
+### electron-store
+
+**Description:** Data persistence library for Electron apps. Use when implementing user settings, app state, cache, or configuration storage in Electron applications. Handles JSON file persistence, schema validation, migrations, encryption, and main/renderer process communication.
+
+**Resources:** 1 reference
+
 ### electron-vite
 
 **Description:** Build Electron apps with Vite. Use when creating, configuring, or troubleshooting Electron + Vite applications, including setup, hot reload, HMR, packaging, and integrating React/Vue with electron-vite. Covers electron-builder configuration, C/C++ addons, dependency pre-bundling, debugging, and all electron-vite plugins.
@@ -49,6 +67,30 @@ This repository contains 41 skills available in this directory.
 **Description:** Professional-grade ESLint development for JavaScript and TypeScript projects. Use when working with ESLint for (1) configuring ESLint in projects, (2) understanding or fixing ESLint errors and warnings, (3) creating or modifying ESLint rules, (4) integrating ESLint into build systems or editors, (5) migrating ESLint configurations, (6) setting up custom parsers or plugins, (7) troubleshooting ESLint issues, (8) implementing code quality standards, or (9) any task involving ESLint setup, configuration, or usage. Covers all ESLint versions with focus on v9+ flat config format.
 
 **Resources:** 397 references • 1 Python script
+
+### expo
+
+**Description:** "Production-grade Expo and React Native development framework with comprehensive SDK documentation, EAS integration, navigation, build workflows, and best practices. Use when Claude needs to work with Expo SDK features and APIs, EAS build/update/deployment workflows, React Navigation integration, development environment setup, app configuration and deployment, troubleshooting Expo apps, or any Expo/React Native development tasks."
+
+**Resources:** 657 references • 2 Python scripts
+
+### expo-android-widgets
+
+**Description:** Build Android home screen widgets for React Native Expo apps using react-native-android-widget. Use this skill when creating launcher widgets, implementing widget task handlers, designing widget UI with primitives (FlexWidget, TextWidget, ImageWidget, ListWidget), configuring Expo config plugins for widgets, handling widget clicks and updates, or any Android widget development in Expo/React Native projects. Triggers include widget, home screen widget, launcher widget, Android widget, react-native-android-widget.
+
+**Resources:** 2 references
+
+### fastmcp-v3-migration
+
+**Description:** Production-ready migration from FastMCP v2.x to v3.0. Use when upgrading MCP servers built on FastMCP to v3, migrating legacy FastMCP code, converting v2 patterns to v3 architecture (providers/transforms), or when user mentions FastMCP upgrade, migration, or v3. Covers breaking changes, deprecated patterns, new v3 features (providers, transforms, versioning, authorization), and testing strategies. Ensures zero-regression migrations with user confirmation checkpoints.
+
+**Resources:** 5 references
+
+### gemini-cli
+
+**Description:** Programmatic interaction with Google's Gemini models via gemini-cli headless mode. Use this skill when Claude needs to collaborate with Gemini LLMs for tasks like advanced debugging, code analysis, research synthesis, or when building scripts that leverage Gemini's capabilities. Also use when helping users create automation scripts that use gemini-cli. Triggers include requests to "ask Gemini", "use Gemini to", "collaborate with Gemini", "get Gemini's perspective", or any scripting task involving gemini-cli.
+
+**Resources:** 4 references • 1 Shell script
 
 ### gemini-collaborate
 
@@ -79,6 +121,12 @@ This repository contains 41 skills available in this directory.
 **Description:** Comprehensive Go development best practices based on Google's Go Style Guide. Use when developing, reviewing, or refactoring Go code to ensure production-ready quality. Covers naming conventions, code organization, error handling, testing strategies, documentation practices, and idiomatic Go patterns. Essential for any Go development task including new projects, code reviews, refactoring existing code, writing tests, designing APIs, structuring packages, or learning Go best practices.
 
 **Resources:** 26 references
+
+### go2rtc
+
+**Description:** Camera streaming application that supports 30+ streaming protocols and camera brands. Use when working with go2rtc for setting up camera streaming from RTSP/RTMP/HTTP/ONVIF/WebRTC sources; configuring go2rtc.yaml; using the REST API for stream management; integrating with Home Assistant, HomeKit, or publishing to YouTube/Telegram; implementing two-way audio, WebRTC streaming, or transcoding; debugging connection issues or stream problems
+
+**Resources:** 5 references
 
 ### gsap
 
@@ -116,6 +164,16 @@ This repository contains 41 skills available in this directory.
 
 **Resources:** 4 references
 
+### mcp-setup
+
+**Description:** Set up MCP (Model Context Protocol) servers in Claude Code workspaces for testing. Use this skill when a user provides a local file path to an MCP server, a GitHub repository URL containing an MCP server, or asks to configure/install/set up an MCP server for testing. Handles creating .mcp.json configuration, cloning repositories, and guiding users through the setup process.
+
+### mcp-test-harness
+
+**Description:** Build fully automated integration test suites for MCP (Model Context Protocol) servers using STDIO transport. Use when creating pytest tests for Python/FastMCP servers, Vitest tests for TypeScript servers, or using MCP Inspector CLI for universal testing. Triggers include "test my MCP server", "create MCP tests", "automated MCP testing", "integration tests for MCP", or any request to verify MCP server functionality with real data validation.
+
+**Resources:** 4 references • 4 scripts (2 Python, 2 TypeScript)
+
 ### modern-frontend-design
 
 **Description:** Create distinctive, production-grade frontend interfaces with high design quality and modern aesthetics. Use when building web components, React/HTML artifacts, landing pages, dashboards, UI libraries, or any frontend interface. Generates creative, polished code with bold aesthetic choices. Specializes in dark themes, glassmorphism, minimalist design, and explicitly avoids generic AI patterns like purple gradients and cookie-cutter layouts.
@@ -134,6 +192,12 @@ This repository contains 41 skills available in this directory.
 
 **Resources:** 37 references • 3 Python scripts
 
+### nativewind
+
+**Description:** NativeWind v4 for React Native - use Tailwind CSS to style React Native components. Use when building React Native apps with Tailwind-style className syntax, configuring NativeWind with Metro/Expo/Next.js, styling third-party components with cssInterop/remapProps, implementing dark mode or themes, or handling React Native-specific styling quirks like flex defaults and platform differences.
+
+**Resources:** 4 references
+
 ### node-to-bun-migration
 
 **Description:** Migrate Node.js projects to Bun with zero regression and no breaking changes. Use when the user wants to migrate to Bun, optimize performance by switching to Bun, evaluate Bun compatibility, or identify migration blockers. Provides incremental adoption strategies, compatibility assessment, and comprehensive testing guidance.
@@ -144,11 +208,23 @@ This repository contains 41 skills available in this directory.
 
 **Resources:** 1 reference • 1 Python script
 
+### npm-to-pnpm
+
+**Description:** Migrate projects from npm to pnpm including lockfile conversion, workspace setup, CI/CD updates, and troubleshooting. Use when converting a single package from npm to pnpm, migrating npm workspaces or monorepos, updating CI/CD pipelines for pnpm, troubleshooting issues after npm to pnpm migration, or converting package-lock.json to pnpm-lock.yaml.
+
+**Resources:** 15 references
+
 ### pdf-to-markdown
 
 **Description:** Convert PDF documents to LLM-friendly Markdown format using pymupdf4llm. Use when working with PDF files that need to be converted to markdown, extracted as text for analysis, or made accessible for LLM processing. Handles complex layouts, tables, multi-column documents, and preserves formatting structure.
 
 **Resources:** 1 reference • 1 Python script
+
+### playwright-cli
+
+**Description:** Browser automation and testing with Playwright CLI. Use when Claude needs to automate browser interactions, run end-to-end tests, capture screenshots, generate test code, set up Playwright in a project, or control browsers programmatically. Triggers include requests for browser automation, web testing, screenshot capture, test generation, UI testing, form filling, web scraping with browser rendering, or Playwright installation/setup.
+
+**Resources:** 1 reference • 1 JavaScript script
 
 ### plugin-builder
 
@@ -173,6 +249,12 @@ This repository contains 41 skills available in this directory.
 **Description:** Comprehensive React 19 development skill with 150+ official react.dev documents. Use when writing React components, hooks, Server Components, forms, or any React code. Covers state management (useState, useReducer, Context), effects (useEffect, useLayoutEffect), refs, performance optimization, React Compiler, Server Components ("use server", "use client"), Server Functions, form actions (useActionState, useFormStatus, useOptimistic), and all React DOM APIs. Includes full official documentation from react.dev organized by topic.
 
 **Resources:** 160 references
+
+### react-native
+
+**Description:** Complete React Native framework documentation for building native mobile apps with JavaScript. Use proactively when working with React Native code - creating components, implementing navigation, handling gestures and animations, styling with Flexbox, platform-specific features (iOS/Android), native modules integration, performance optimization, build/deployment tasks, or any React Native development workflow.
+
+**Resources:** 58 references • 1 Python script
 
 ### react-three-fiber
 
@@ -221,6 +303,12 @@ This repository contains 41 skills available in this directory.
 **Description:** Comprehensive tRPC documentation and reference covering v10.x and v11.x. Use when working with tRPC (TypeScript Remote Procedure Call) for building end-to-end typesafe APIs. Includes complete documentation for client setup (React, Next.js, Tanstack Query, Vanilla), server configuration (routers, procedures, middleware, adapters), TypeDoc API reference, migration guides, and blog posts covering new features and best practices. Use this skill when (1) implementing tRPC in a project, (2) configuring tRPC client or server, (3) troubleshooting tRPC issues, (4) migrating between versions, (5) understanding tRPC concepts like procedures, routers, links, or context, or (6) integrating tRPC with frameworks like Next.js, Express, Fastify, or React Query.
 
 **Resources:** 341 references • 2 Python scripts
+
+### typescript-best-practices
+
+**Description:** TypeScript best practices and patterns for writing type-safe, maintainable code. Use when working with TypeScript files, configuring tsconfig, defining interfaces/types, implementing error handling, writing generics, or setting up type-safe communication patterns. Includes patterns for discriminated unions, type guards, utility types, and more.
+
+**Resources:** 8 references
 
 ### uiverse
 
