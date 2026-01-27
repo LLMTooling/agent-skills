@@ -6,7 +6,7 @@ You must output a clean ASCII table showing all skills in the skills folder.
 
 Use Glob to find all .skill files:
 ```
-skills/*.skill
+skills/**/*.skill
 ```
 
 ## Extract skill names

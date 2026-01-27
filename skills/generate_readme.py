@@ -46,9 +46,13 @@ def parse_yaml_frontmatter(content: str) -> Optional[Dict[str, str]]:
     return frontmatter
 
 
-def analyze_zip_content(zip_path: Path) -> Optional[Dict[str, any]]:
+def analyze_zip_content(zip_path: Path, current_dir: Path) -> Optional[Dict[str, any]]:
     """Analyze a single .skill zip file."""
     try:
+        # Extract category from relative path
+        relative_path = zip_path.relative_to(current_dir)
+        category = relative_path.parent.name if relative_path.parent != Path('.') else 'root'
+
         with zipfile.ZipFile(zip_path, 'r') as z:
             # Find SKILL.md (it might be inside a subdirectory if the zip preserved folder structure)
             # We look for */SKILL.md or SKILL.md
@@ -126,7 +130,8 @@ def analyze_zip_content(zip_path: Path) -> Optional[Dict[str, any]]:
                 'name': frontmatter['name'],
                 'description': frontmatter.get('description', 'No description available'),
                 'references': reference_count,
-                'script_counts': script_counts
+                'script_counts': script_counts,
+                'category': category,
             }
 
     except zipfile.BadZipFile:
@@ -138,47 +143,96 @@ def analyze_zip_content(zip_path: Path) -> Optional[Dict[str, any]]:
 
 
 def generate_readme_md(skills: List[Dict[str, any]]) -> str:
-    """Generate README.md content."""
+    """Generate README.md content with category grouping."""
+    # Group by category
+    categories = {}
+    for skill in skills:
+        cat = skill['category']
+        if cat not in categories:
+            categories[cat] = []
+        categories[cat].append(skill)
+
+    # Category display names
+    category_names = {
+        'react-ecosystem': 'React Ecosystem',
+        'expo': 'Expo',
+        'svelte': 'Svelte',
+        'astro': 'Astro',
+        'python-dev': 'Python Development',
+        'typescript-dev': 'TypeScript Development',
+        'go-dev': 'Go Development',
+        'rust-dev': 'Rust Development',
+        'electron': 'Electron',
+        'build-tools': 'Build Tools',
+        'styling': 'Styling',
+        'animation-graphics': 'Animation & Graphics',
+        'ai-llm-integration': 'AI & LLM Integration',
+        'testing': 'Testing',
+        'mcp': 'MCP Tools',
+        'migration-tools': 'Migration Tools',
+        'code-quality': 'Code Quality',
+        'design': 'Design',
+        'terminal-cli': 'Terminal & CLI',
+        'utilities': 'Utilities',
+        'iot-smart-home': 'IoT & Smart Home',
+    }
+
+    # Define category order
+    category_order = [
+        'react-ecosystem', 'expo', 'svelte', 'astro',
+        'python-dev', 'typescript-dev', 'go-dev', 'rust-dev',
+        'electron', 'build-tools', 'styling', 'animation-graphics',
+        'ai-llm-integration', 'testing', 'mcp',
+        'migration-tools', 'code-quality', 'design', 'terminal-cli',
+        'utilities', 'iot-smart-home',
+    ]
+
     lines = [
         "# Agent Skills",
         "",
-        f"This repository contains {len(skills)} skills available in this directory.",
+        f"This repository contains {len(skills)} skills organized into {len(categories)} categories.",
         "",
         "## Skills",
         ""
     ]
 
-    for skill in skills:
-        lines.append(f"### {skill['name']}")
+    # Sort categories by defined order, then alphabetically for unknown categories
+    sorted_categories = sorted(
+        categories.keys(),
+        key=lambda c: (category_order.index(c) if c in category_order else 999, c)
+    )
+
+    for category in sorted_categories:
+        display_name = category_names.get(category, category.replace('-', ' ').title())
+        lines.append(f"### {display_name}")
         lines.append("")
-        lines.append(f"**Description:** {skill['description']}")
-        lines.append("")
 
-        # Add metadata line
-        metadata_parts = []
-        if skill['references'] > 0:
-            ref_text = "reference" if skill['references'] == 1 else "references"
-            metadata_parts.append(f"{skill['references']} {ref_text}")
-
-        # Format script counts
-        script_counts = skill['script_counts']
-        if script_counts:
-            total_scripts = sum(script_counts.values())
-            script_text = "script" if total_scripts == 1 else "scripts"
-
-            # Build language breakdown
-            if len(script_counts) == 1:
-                # Single language: "3 Python scripts"
-                lang, count = list(script_counts.items())[0]
-                metadata_parts.append(f"{count} {lang} {script_text}")
-            else:
-                # Multiple languages: "5 scripts (3 Python, 2 Go)"
-                lang_parts = [f"{count} {lang}" for lang, count in sorted(script_counts.items())]
-                metadata_parts.append(f"{total_scripts} {script_text} ({', '.join(lang_parts)})")
-
-        if metadata_parts:
-            lines.append(f"**Resources:** {' • '.join(metadata_parts)}")
+        category_skills = categories[category]
+        for skill in sorted(category_skills, key=lambda x: x['name'].lower()):
+            lines.append(f"#### {skill['name']}")
             lines.append("")
+            lines.append(f"**Description:** {skill['description']}")
+            lines.append("")
+
+            # Add metadata (references, scripts)
+            metadata_parts = []
+            if skill['references'] > 0:
+                ref_text = "reference" if skill['references'] == 1 else "references"
+                metadata_parts.append(f"{skill['references']} {ref_text}")
+
+            if skill['script_counts']:
+                total_scripts = sum(skill['script_counts'].values())
+                script_text = "script" if total_scripts == 1 else "scripts"
+                if len(skill['script_counts']) == 1:
+                    lang, count = list(skill['script_counts'].items())[0]
+                    metadata_parts.append(f"{count} {lang} {script_text}")
+                else:
+                    lang_parts = [f"{c} {l}" for l, c in sorted(skill['script_counts'].items())]
+                    metadata_parts.append(f"{total_scripts} {script_text} ({', '.join(lang_parts)})")
+
+            if metadata_parts:
+                lines.append(f"**Resources:** {' • '.join(metadata_parts)}")
+                lines.append("")
 
     return '\n'.join(lines)
 
@@ -187,12 +241,12 @@ def main():
     """Main entry point."""
     current_dir = Path('.')
     output_file = current_dir / 'README.md'
-    
+
     print(f"Scanning .skill files in: {current_dir.absolute()}")
-    
+
     skills = []
-    for skill_file in sorted(current_dir.glob('*.skill')):
-        skill_data = analyze_zip_content(skill_file)
+    for skill_file in sorted(current_dir.rglob('*.skill')):
+        skill_data = analyze_zip_content(skill_file, current_dir)
         if skill_data:
             skills.append(skill_data)
 
@@ -200,15 +254,12 @@ def main():
         print("No valid .skill files found.")
         return 1
 
-    # Sort alphabetically by name
-    skills.sort(key=lambda x: x['name'].lower())
-
     print(f"Found {len(skills)} valid skills")
     print(f"Generating README.md...")
-    
+
     readme_content = generate_readme_md(skills)
     output_file.write_text(readme_content, encoding='utf-8')
-    
+
     print(f"Successfully wrote README.md to: {output_file}")
     return 0
 
