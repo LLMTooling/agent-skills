@@ -1,6 +1,6 @@
 # Agent Skills
 
-This repository contains 59 skills organized into 21 categories.
+This repository contains 63 skills organized into 24 categories.
 
 ## Skills
 
@@ -222,6 +222,12 @@ This repository contains 59 skills organized into 21 categories.
 
 ### AI & LLM Integration
 
+#### claude-code-headless
+
+**Description:** Production-grade guide for building applications that wrap Claude Code CLI in headless/programmatic mode. Use when developing GUI applications, IDE extensions (VSCode, JetBrains), CI/CD integrations, custom wrappers, or any programmatic interface to Claude Code. Covers CLI usage patterns (-p flag), output formats (JSON/streaming), tool permissions, session management, subagent integration, and deployment architecture for enterprise environments.
+
+**Resources:** 7 references
+
 #### claude-code-hooks
 
 **Description:** Interactive skill for setting up Claude Code hooks in any workspace. Use when users want to configure hooks for Claude Code, create automation around tool execution, add notifications, format code automatically, protect files, validate commands, log operations, or customize Claude Code behavior. Triggers include "set up hooks", "create hook", "configure Claude Code", "add PreToolUse hook", "PostToolUse automation", "notification hook", "protect files from editing", or any request to automate Claude Code's behavior through hooks.
@@ -393,3 +399,27 @@ This repository contains 59 skills organized into 21 categories.
 **Description:** Comprehensive Home Assistant custom integration development skill. Use when developing Home Assistant integrations, custom components, or plugins. Covers entity platforms, config flows, data management, quality requirements, testing, and HACS publishing. Includes complete reference documentation for all 47+ entity types, integration quality scale requirements, and step-by-step publishing guides.
 
 **Resources:** 6 references
+
+### Backend Frameworks
+
+#### express
+
+**Description:** Express.js 5.x web framework for Node.js - complete API reference, middleware patterns, routing, error handling, and production best practices. Use when building Express applications, creating REST APIs, implementing middleware, handling routes, managing errors, configuring security, optimizing performance, or migrating from Express 4 to 5. Triggers on Express, express.js, Node.js web server, REST API, middleware, routing, req/res objects, app.use, app.get, app.post, router, error handling, body-parser, static files, template engines.
+
+**Resources:** 8 references
+
+### Editor Integration
+
+#### vscode-extension
+
+**Description:** Complete VS Code extension development toolkit with API documentation, scaffolding scripts, code templates, and testing utilities. Use when Claude needs to develop, validate, or publish Visual Studio Code extensions. Supports creating new extension projects, implementing extension features like commands and webviews, testing and validating for marketplace compliance, and understanding VS Code Extension API patterns. Documentation current as of January 2026.
+
+**Resources:** 80 references • 6 scripts (2 Python, 4 TypeScript)
+
+### Tauri
+
+#### tauri
+
+**Description:** Comprehensive Tauri v2 development framework documentation. Use when building cross-platform desktop and mobile applications with Tauri, configuring Tauri projects, implementing Rust commands callable from frontend JavaScript/TypeScript, setting up IPC (inter-process communication), configuring security permissions and capabilities, integrating official Tauri plugins (file-system, dialog, notifications, http-client, shell, updater, etc.), debugging Tauri apps, distributing/signing/publishing apps for Windows/macOS/Linux/iOS/Android, or migrating from Tauri v1. Covers the complete Tauri ecosystem including CLI, configuration, frontend framework integrations, and production deployment.
+
+**Resources:** 121 references

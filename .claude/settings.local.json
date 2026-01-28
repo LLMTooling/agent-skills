@@ -8,7 +8,9 @@
       "Bash(gh pr checkout:*)",
       "Bash(wc:*)",
       "Bash(unzip:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)"
     ]
   }
 }
