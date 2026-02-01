@@ -1,6 +1,6 @@
 # Agent Skills
 
-This repository contains 69 skills organized into 25 categories.
+This repository contains 71 skills organized into 26 categories.
 
 ## Skills
 
@@ -278,6 +278,12 @@ This repository contains 69 skills organized into 25 categories.
 
 **Resources:** 1 reference • 1 JavaScript script
 
+#### vitest
+
+**Description:** "Comprehensive Vitest testing framework skill for writing, configuring, and running tests in JavaScript/TypeScript projects. Use when Claude needs to: set up Vitest in a new or existing project (Vite or non-Vite), write or modify tests using Vitest APIs, configure Vitest for specific scenarios (coverage, browser testing, mocking, etc.), migrate from Jest or older Vitest versions, debug test failures or configuration issues, implement advanced testing patterns (workspace, browser mode, snapshots, mocking)."
+
+**Resources:** 184 references
+
 ### MCP Tools
 
 #### mcp-setup
@@ -429,6 +435,14 @@ This repository contains 69 skills organized into 25 categories.
 **Description:** Comprehensive Home Assistant custom integration development skill. Use when developing Home Assistant integrations, custom components, or plugins. Covers entity platforms, config flows, data management, quality requirements, testing, and HACS publishing. Includes complete reference documentation for all 47+ entity types, integration quality scale requirements, and step-by-step publishing guides.
 
 **Resources:** 6 references
+
+### Angular
+
+#### angular
+
+**Description:** "Comprehensive Angular v21+ development skill with modern patterns - standalone components, signals, new control flow (@if/@for), inject() function, signal forms, OnPush change detection, and Angular best practices. Use when working with Angular applications, components, services, routing, forms, testing, or any Angular-specific task including - (1) Building new Angular features, (2) Migrating to modern Angular patterns, (3) Implementing reactive state with signals, (4) Setting up routing and lazy loading, (5) Creating forms with signal-based validation, (6) Writing tests for Angular components, (7) Optimizing performance, or any other Angular development task."
+
+**Resources:** 837 references
 
 ### Apis Services
 

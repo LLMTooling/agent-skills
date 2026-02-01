@@ -18,6 +18,7 @@ This repository includes a variety of skills located in the `skills/` directory:
 
 ### Frontend Frameworks
 
+*   **angular**: Comprehensive Angular v21+ development with modern patterns (standalone components, signals, new control flow, inject(), signal forms).
 *   **astro-build**: Comprehensive documentation for Astro, the web framework for content-driven websites.
 *   **react-19**: Documentation and features for React 19.
 *   **react-native**: Complete React Native framework documentation for building native mobile apps with JavaScript.
@@ -79,6 +80,7 @@ This repository includes a variety of skills located in the `skills/` directory:
 
 *   **jest**: Comprehensive JavaScript testing with Jest 30.0.
 *   **playwright-cli**: Browser automation and testing with Playwright CLI.
+*   **vitest**: Comprehensive Vitest testing framework for writing, configuring, and running tests in JavaScript/TypeScript projects.
 
 ### APIs & Services
 
