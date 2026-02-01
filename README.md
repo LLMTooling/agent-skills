@@ -37,6 +37,7 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **gsap**: Professional animation development with GreenSock (GSAP).
 *   **lenis**: Lightweight smooth scroll library documentation and implementation.
 *   **motion**: Animation library guide for React, vanilla JS, and Vue.
+*   **pixijs-v8**: PixiJS v8 2D WebGL rendering engine for creating interactive graphics, games, and visualizations.
 *   **react-three-fiber**: Guide for building 3D experiences with React Three Fiber (R3F).
 *   **threejs**: Comprehensive Three.js documentation and reference for 3D graphics.
 
@@ -79,6 +80,10 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **jest**: Comprehensive JavaScript testing with Jest 30.0.
 *   **playwright-cli**: Browser automation and testing with Playwright CLI.
 
+### APIs & Services
+
+*   **google-tasks-api**: Complete integration guide for Google Tasks API using @googleapis/tasks npm package for Node.js/TypeScript.
+
 ### AI & LLM Integration
 
 *   **claude-code-headless**: Production-grade guide for building applications that wrap Claude Code CLI in headless/programmatic mode.
@@ -88,6 +93,8 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **gemini-genkit**: Guide for building AI apps with Google's Gemini API and Firebase Genkit.
 *   **mcp-setup**: Set up MCP (Model Context Protocol) servers in Claude Code workspaces for testing.
 *   **mcp-test-harness**: Build fully automated integration test suites for MCP servers using STDIO transport.
+*   **mcp-typescript-sdk**: Build MCP (Model Context Protocol) servers and clients in TypeScript using the official SDK.
+*   **vercel-ai-sdk**: Complete toolkit for building AI applications with the Vercel AI SDK v8 for streaming, tool calling, and RAG.
 
 ### Code Quality & Best Practices
 
@@ -99,6 +106,8 @@ This repository includes a variety of skills located in the `skills/` directory:
 
 *   **github-cli**: Comprehensive GitHub data analysis and statistics extraction.
 *   **ink-tui**: Build interactive Terminal User Interfaces (TUIs) with React and Ink.
+*   **node-pty**: Pseudoterminal (PTY) library for Node.js providing forkpty bindings for terminal emulators.
+*   **xterm**: Comprehensive xterm.js terminal emulator library integration for web applications.
 
 ### IoT & Smart Home
 

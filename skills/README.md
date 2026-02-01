@@ -1,6 +1,6 @@
 # Agent Skills
 
-This repository contains 63 skills organized into 24 categories.
+This repository contains 69 skills organized into 25 categories.
 
 ## Skills
 
@@ -208,6 +208,12 @@ This repository contains 63 skills organized into 24 categories.
 
 **Resources:** 110 references
 
+#### pixijs-v8
+
+**Description:** PixiJS v8.x 2D WebGL rendering engine for creating interactive graphics, games, and visualizations. Use for sprite rendering, canvas applications, WebGL/WebGPU rendering, particle systems, text, asset loading, filters, effects, and 2D graphics optimization. Triggers when user mentions PixiJS, 2D WebGL, sprites, canvas graphics, or HTML5 game engines.
+
+**Resources:** 22 references
+
 #### react-three-fiber
 
 **Description:** Comprehensive React Three Fiber (R3F) documentation and guidance for building 3D experiences in React. Use when working with React Three Fiber, @react-three/fiber package, declarative 3D rendering in React, Three.js with React integration, or any R3F-related development tasks including Canvas setup, hooks (useFrame, useThree, useLoader), events, objects, animations, performance optimization, testing, TypeScript integration, loading models/textures, or troubleshooting R3F applications.
@@ -252,6 +258,12 @@ This repository contains 63 skills organized into 24 categories.
 
 **Resources:** 47 references
 
+#### vercel-ai-sdk
+
+**Description:** Complete toolkit for building AI applications with the Vercel AI SDK v6. Use when: (1) Building AI agents with tool calling and multi-step workflows (2) Creating chat interfaces with streaming responses (3) Generating structured data/objects with schemas (4) Working with any AI provider (OpenAI, Anthropic, Google, etc.) (5) Implementing RAG, embeddings, or knowledge bases (6) Adding AI features to Next.js, Node.js, or other frameworks Covers all AI SDK capabilities: generateText, streamText, generateObject, streamObject, tools, agents, useChat, embeddings, and provider integrations.
+
+**Resources:** 429 references • 1 Python script
+
 ### Testing
 
 #### jest
@@ -277,6 +289,12 @@ This repository contains 63 skills organized into 24 categories.
 **Description:** Build fully automated integration test suites for MCP (Model Context Protocol) servers using STDIO transport. Use when creating pytest tests for Python/FastMCP servers, Vitest tests for TypeScript servers, or using MCP Inspector CLI for universal testing. Triggers include "test my MCP server", "create MCP tests", "automated MCP testing", "integration tests for MCP", or any request to verify MCP server functionality with real data validation.
 
 **Resources:** 4 references • 4 scripts (2 Python, 2 TypeScript)
+
+#### mcp-typescript-sdk
+
+**Description:** "Comprehensive guide for building MCP (Model Context Protocol) servers and clients in TypeScript using the official SDK v1.x. Use when building MCP servers that expose tools/resources/prompts, creating MCP clients, implementing OAuth authentication, working with advanced features like sampling/elicitation/tasks, deploying MCP servers in production with multi-node patterns, or troubleshooting MCP implementations. Focuses on Streamable HTTP for remote servers and stdio for local servers. SSE transport is deprecated and should NEVER be used for new implementations."
+
+**Resources:** 15 references • 4 TypeScript scripts
 
 ### Migration Tools
 
@@ -335,6 +353,18 @@ This repository contains 63 skills organized into 24 categories.
 **Description:** Build production-ready Terminal User Interfaces (TUIs) with React and TypeScript using Ink. Create interactive CLIs with components, hooks, Flexbox layouts, keyboard input handling, and rich UI components from @inkjs/ui. Use this skill when building command-line applications, CLI tools, terminal dashboards, interactive prompts, progress displays, or any terminal-based user interface. Used by Shopify CLI, New York Times, Gatsby, Terraform CDK, Prisma, Parcel, and many production applications.
 
 **Resources:** 60 references
+
+#### node-pty
+
+**Description:** "Pseudoterminal (PTY) library for Node.js providing forkpty(3) bindings. Use when Claude needs to create terminal emulators, interactive shells, or run processes with terminal I/O in Node.js/Electron. Triggered by: (1) Building terminal emulators or integrating shells, (2) Spawning processes with pseudoterminal file descriptors, (3) Working with xterm.js or Electron terminal integration, (4) Cross-platform shell spawning (Linux/macOS/Windows), (5) Managing PTY flow control, process lifecycle, or terminal dimensions."
+
+**Resources:** 13 references • 1 Python script
+
+#### xterm
+
+**Description:** Comprehensive xterm.js terminal emulator library integration for web applications. Use when implementing xterm.js in browser-based terminals, working with terminal rendering and addons, configuring terminal options/themes/events, connecting terminals to PTY/WebSockets, optimizing terminal performance, handling terminal input/output streams, or working with specific xterm.js addons including fit, search, web-links, webgl, unicode11, ligatures, attach, clipboard, image, serialize, and all official addons. Covers the latest @xterm/xterm package.
+
+**Resources:** 18 references
 
 ### Utilities
 
@@ -399,6 +429,14 @@ This repository contains 63 skills organized into 24 categories.
 **Description:** Comprehensive Home Assistant custom integration development skill. Use when developing Home Assistant integrations, custom components, or plugins. Covers entity platforms, config flows, data management, quality requirements, testing, and HACS publishing. Includes complete reference documentation for all 47+ entity types, integration quality scale requirements, and step-by-step publishing guides.
 
 **Resources:** 6 references
+
+### Apis Services
+
+#### google-tasks-api
+
+**Description:** Complete integration guide for Google Tasks API v12.0.0 using @googleapis/tasks npm package. Use when implementing Google Tasks integration in Node.js/TypeScript applications, managing tasks and task lists programmatically, setting up OAuth2 or service account authentication for Google Tasks, working with task assignment from Google Docs or Chat Spaces, or building task management features, todo apps, or productivity tools. Includes complete REST API reference, TypeScript type definitions, authentication patterns, error handling, and production-ready code examples from official Google documentation.
+
+**Resources:** 12 references
 
 ### Backend Frameworks
 
