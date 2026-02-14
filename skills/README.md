@@ -1,6 +1,6 @@
 # Agent Skills
 
-This repository contains 71 skills organized into 26 categories.
+This repository contains 80 skills organized into 29 categories.
 
 ## Skills
 
@@ -86,6 +86,18 @@ This repository contains 71 skills organized into 26 categories.
 
 **Resources:** 156 references
 
+#### pytest
+
+**Description:** Comprehensive pytest testing framework skill for Python. Use when working with pytest tests, fixtures, parametrization, markers, assertions, configuration, plugins, or test discovery. Covers pytest 9.x with full API reference, how-to guides, best practices, and examples for writing, running, and debugging Python tests.
+
+**Resources:** 45 references
+
+#### python-best-practices
+
+**Description:** Production-ready Python DOs and DON'Ts for engineers. Covers code quality, type hints, error handling, async patterns, testing, security, performance, logging, and data validation. Use when writing Python code that needs to be production-ready, reviewing Python code, refactoring legacy Python, or answering questions about Python best practices. Targets Python 3.12+.
+
+**Resources:** 12 references
+
 #### ruff-dev
 
 **Description:** Professional-grade Python development with Ruff (v0.14.10) - an extremely fast Python linter and formatter. Use when working with Python codebases for (1) linting and fixing code quality issues, (2) formatting Python code, (3) configuring Ruff settings, (4) understanding and resolving specific rule violations, (5) integrating Ruff into projects or editors, (6) migrating from other tools (Black, Flake8, isort, etc.), or (7) any Ruff-related development tasks. Includes complete documentation for 937+ lint rules, formatter settings, configuration options, and editor integrations.
@@ -131,6 +143,12 @@ This repository contains 71 skills organized into 26 categories.
 **Description:** Comprehensive Go development best practices based on Google's Go Style Guide. Use when developing, reviewing, or refactoring Go code to ensure production-ready quality. Covers naming conventions, code organization, error handling, testing strategies, documentation practices, and idiomatic Go patterns. Essential for any Go development task including new projects, code reviews, refactoring existing code, writing tests, designing APIs, structuring packages, or learning Go best practices.
 
 **Resources:** 26 references
+
+#### wails
+
+**Description:** Wails v2.11.0 desktop application framework for building cross-platform GUI apps using Go backend and web frontend (React, Vue, Svelte, etc.). Use when user needs to create, build, or debug Wails applications; configure project settings and bindings; use runtime APIs (window, dialog, clipboard, etc.); handle platform-specific builds for Windows/macOS/Linux; integrate frontend frameworks with Go backend; package and distribute desktop applications
+
+**Resources:** 83 references
 
 ### Rust Development
 
@@ -257,6 +275,12 @@ This repository contains 71 skills organized into 26 categories.
 **Description:** Comprehensive guide for building applications with Google's Gemini API and Firebase Genkit framework in TypeScript. Use when developing AI workflows with Gemini models, implementing function calling, structured outputs, RAG systems, multimodal processing (text, image, video, audio), or integrating Google AI tools (Search, Maps, Code Execution, Deep Research). Covers both direct Gemini SDK (@google/genai) and Genkit framework (@genkit-ai/google-genai) patterns.
 
 **Resources:** 47 references
+
+#### sub-agent-creator
+
+**Description:** Interactive sub-agent creation skill for Claude Code. Use when user wants to create a custom subagent or mentions needing a specialized agent for specific tasks. This skill guides the entire subagent creation process including identifier design, system prompt generation, skill/context selection, and writing properly formatted agent files to .claude/agents.
+
+**Resources:** 2 references • 1 Python script
 
 #### vercel-ai-sdk
 
@@ -460,6 +484,20 @@ This repository contains 71 skills organized into 26 categories.
 
 **Resources:** 8 references
 
+#### fastapi
+
+**Description:** "FastAPI web framework for building APIs with Python. Use when working with FastAPI applications including: (1) Creating REST APIs and web services, (2) Implementing path operations and routing, (3) Working with request/response handling, parameters, and bodies, (4) Setting up authentication and security (OAuth2, JWT, API keys), (5) Implementing dependencies and dependency injection, (6) Testing FastAPI applications, (7) Deploying FastAPI apps, (8) Working with WebSockets, middleware, or background tasks. Based on FastAPI 0.129+ with Python 3.10+, Pydantic v2, and Starlette 0.40+."
+
+**Resources:** 138 references
+
+### Devops
+
+#### github-actions
+
+**Description:** Comprehensive GitHub Actions workflow authoring skill. Enables Claude to write production-grade CI/CD workflows with latest best practices, syntax, and security patterns. Use when creating or modifying GitHub Actions workflows, designing CI/CD pipelines, configuring workflow triggers/events/schedules, implementing security patterns (secrets, OIDC, attestations), creating custom actions, migrating from other CI systems, troubleshooting failed workflows, or any GitHub Actions automation task. Includes complete reference documentation extracted from official GitHub docs with source URLs for verification.
+
+**Resources:** 243 references
+
 ### Editor Integration
 
 #### vscode-extension
@@ -467,6 +505,24 @@ This repository contains 71 skills organized into 26 categories.
 **Description:** Complete VS Code extension development toolkit with API documentation, scaffolding scripts, code templates, and testing utilities. Use when Claude needs to develop, validate, or publish Visual Studio Code extensions. Supports creating new extension projects, implementing extension features like commands and webviews, testing and validating for marketplace compliance, and understanding VS Code Extension API patterns. Documentation current as of January 2026.
 
 **Resources:** 80 references • 6 scripts (2 Python, 4 TypeScript)
+
+### Game Dev
+
+#### minecraft-fabric-dev
+
+**Description:** Comprehensive guidance for Minecraft mod development with Fabric, including porting from other mod loaders (Forge, NeoForge). Integrates MCP servers for decompilation, documentation access, and mixin validation. Use when developing Fabric mods, porting from Forge, or working with Minecraft source code.
+
+### Java Dev
+
+#### java-best-practices
+
+**Description:** "Complete Google Java Style Guide covering source file structure, formatting, naming conventions, programming practices, and Javadoc standards. Use when Claude needs to write, review, or format Java code following Google's coding standards including: (1) Writing new Java code, (2) Reviewing Java code for style compliance, (3) Formatting Java source files, (4) Applying naming conventions to Java identifiers, (5) Writing Javadoc comments, (6) Organizing Java source files, or any other Java development tasks requiring adherence to Google's style guidelines."
+
+#### junit
+
+**Description:** Comprehensive JUnit 6 testing framework skill for Java/JVM. Use when working with JUnit tests, annotations, assertions, extensions, parameterized tests, or build tool configuration. Covers JUnit Platform, Jupiter, and Vintage. Trigger for questions about @Test, @BeforeEach, @AfterEach, assertions, assumptions, test lifecycle, parallel execution, dependency injection, migrating from JUnit 4, Gradle/Maven/Ant configuration, IDE support, console launcher, or extension development.
+
+**Resources:** 63 references • 1 Python script
 
 ### Tauri
 

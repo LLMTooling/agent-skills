@@ -10,7 +10,11 @@
       "Bash(unzip:*)",
       "Bash(ls:*)",
       "Bash(git commit:*)",
-      "Bash(git push)"
+      "Bash(git push)",
+      "Bash(git reset:*)",
+      "Bash(for skill in:*)",
+      "Bash(do echo \"=== $skill ===\")",
+      "Bash(done)"
     ]
   }
 }

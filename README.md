@@ -56,6 +56,7 @@ This repository includes a variety of skills located in the `skills/` directory:
 ### Backend Development
 
 *   **express**: Express.js 5.x web framework for Node.js - complete API reference, middleware patterns, routing, error handling, and production best practices.
+*   **fastapi**: FastAPI web framework for building APIs with Python (REST APIs, routing, authentication, dependencies, WebSockets, background tasks).
 *   **trpc**: Comprehensive tRPC documentation and reference covering v10.x and v11.x.
 
 ### Languages & Tooling
@@ -70,11 +71,16 @@ This repository includes a variety of skills located in the `skills/` directory:
 #### Python
 *   **mypy**: Professional static type checking for Python.
 *   **pydantic-dev**: Data validation and serialization with Pydantic v2.
+*   **pytest**: Comprehensive pytest testing framework for Python (9.x with fixtures, parametrization, markers, plugins).
+*   **python-best-practices**: Production-ready Python DOs and DON'Ts for engineers (code quality, type hints, error handling, async patterns, testing, security, performance).
 *   **ruff-dev**: Extremely fast Python linting and formatting with Ruff.
 
 #### Other Languages
 *   **go-best-practices**: Go development guidelines based on Google's Go Style Guide.
+*   **java-best-practices**: Complete Google Java Style Guide covering source file structure, formatting, naming conventions, and Javadoc standards.
+*   **junit**: Comprehensive JUnit 6 testing framework for Java/JVM (annotations, assertions, extensions, parameterized tests).
 *   **rust-dev**: Rust development best practices and tooling.
+*   **wails**: Wails v2.11 desktop application framework for building cross-platform GUI apps using Go backend and web frontend.
 
 ### Testing
 
@@ -96,6 +102,7 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **mcp-setup**: Set up MCP (Model Context Protocol) servers in Claude Code workspaces for testing.
 *   **mcp-test-harness**: Build fully automated integration test suites for MCP servers using STDIO transport.
 *   **mcp-typescript-sdk**: Build MCP (Model Context Protocol) servers and clients in TypeScript using the official SDK.
+*   **sub-agent-creator**: Interactive sub-agent creation skill for Claude Code (identifier design, system prompts, skill/context selection).
 *   **vercel-ai-sdk**: Complete toolkit for building AI applications with the Vercel AI SDK v8 for streaming, tool calling, and RAG.
 
 ### Code Quality & Best Practices
@@ -133,6 +140,14 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **node-to-bun-migration**: Guide for migrating Node.js projects to Bun.
 *   **node-to-deno-migration**: Guide for migrating Node.js projects to Deno 2.0+.
 *   **npm-to-pnpm**: Migrate projects from npm to pnpm including lockfile conversion and workspace setup.
+
+### DevOps & CI/CD
+
+*   **github-actions**: Comprehensive GitHub Actions workflow authoring with latest best practices, syntax, and security patterns.
+
+### Game Development
+
+*   **minecraft-fabric-dev**: Minecraft mod development with Fabric, including porting from Forge/NeoForge.
 
 ## Usage
 
