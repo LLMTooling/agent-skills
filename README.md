@@ -135,7 +135,6 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **local-skill-creator**: Toolkit for creating and packaging your own skills locally.
 *   **pdf-to-markdown**: Convert PDF documents to LLM-friendly Markdown.
 *   **plugin-builder**: Build, package, and publish Claude Code plugins.
-*   **project-bootstrap**: Bootstrap Claude Code setup for greenfield (new) or brownfield (existing) projects with skills and agents.
 *   **uiverse**: Extract HTML and CSS code from UIVerse.io UI components.
 *   **v0-version-planner**: Planning tool for validating dependency versions before prototyping.
 *   **web-scraper**: Web scraping utility with Cloudflare bypass capabilities.

@@ -458,12 +458,6 @@ This repository contains 90 skills organized into 29 categories.
 
 **Resources:** 4 references • 3 Python scripts
 
-#### project-bootstrap
-
-**Description:** Bootstrap Claude Code setup for greenfield (new) or brownfield (existing) projects. Automatically detects project type, copies relevant skills from your skill library, and creates engineer agents with best practices skills. Use when starting work on a new project or wanting to upgrade an existing project's Claude Code setup with skills and agents.
-
-**Resources:** 2 references • 2 Python scripts
-
 #### uiverse
 
 **Description:** Extract HTML and CSS code from UIVerse.io UI components. Use this when the user wants to get the code for a specific UIVerse component URL. It bypasses Cloudflare and returns clean HTML/CSS.
