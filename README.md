@@ -74,6 +74,7 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **pytest**: Comprehensive pytest testing framework for Python (9.x with fixtures, parametrization, markers, plugins).
 *   **python-best-practices**: Production-ready Python DOs and DON'Ts for engineers (code quality, type hints, error handling, async patterns, testing, security, performance).
 *   **ruff-dev**: Extremely fast Python linting and formatting with Ruff.
+*   **textual**: Python TUI framework for building sophisticated terminal applications with Textual CSS, widgets, reactive state, and animations.
 
 #### Other Languages
 *   **go-best-practices**: Go development guidelines based on Google's Go Style Guide.
@@ -94,6 +95,7 @@ This repository includes a variety of skills located in the `skills/` directory:
 
 ### AI & LLM Integration
 
+*   **agent-client-protocol**: Build ACP-compliant agents (AI coding assistants) and clients (editors/IDEs) in TypeScript, Python, Kotlin, or Rust.
 *   **claude-code-headless**: Production-grade guide for building applications that wrap Claude Code CLI in headless/programmatic mode.
 *   **claude-code-hooks**: Interactive skill for setting up Claude Code hooks in any workspace (automation, notifications, validation).
 *   **gemini-cli**: Programmatic interaction with Google's Gemini models via gemini-cli headless mode.
@@ -101,6 +103,7 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **gemini-genkit**: Guide for building AI apps with Google's Gemini API and Firebase Genkit.
 *   **mcp-setup**: Set up MCP (Model Context Protocol) servers in Claude Code workspaces for testing.
 *   **mcp-test-harness**: Build fully automated integration test suites for MCP servers using STDIO transport.
+*   **fastmcp-sdk**: FastMCP Python SDK for building MCP servers, clients, and applications with authentication and deployment support.
 *   **mcp-typescript-sdk**: Build MCP (Model Context Protocol) servers and clients in TypeScript using the official SDK.
 *   **sub-agent-creator**: Interactive sub-agent creation skill for Claude Code (identifier design, system prompts, skill/context selection).
 *   **vercel-ai-sdk**: Complete toolkit for building AI applications with the Vercel AI SDK v8 for streaming, tool calling, and RAG.
@@ -110,9 +113,11 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **best-practices**: Universal software engineering best practices for any language or project (SOLID, DRY, KISS, YAGNI, architectural patterns).
 *   **code-cleanup-final-pass**: Deep code review and cleanup workflow for final quality checks.
 *   **modern-frontend-design**: Principles for creating high-quality, modern frontend interfaces.
+*   **spotless-java**: Production-grade Java code formatting and quality enforcement using Spotless with Google Java Format.
 
 ### Terminal & CLI Tools
 
+*   **charm-tui**: Build beautiful Terminal User Interfaces (TUIs) in Go using the Charmbracelet ecosystem (Bubble Tea, Lip Gloss, Bubbles, Huh, Glamour).
 *   **github-cli**: Comprehensive GitHub data analysis and statistics extraction.
 *   **ink-tui**: Build interactive Terminal User Interfaces (TUIs) with React and Ink.
 *   **node-pty**: Pseudoterminal (PTY) library for Node.js providing forkpty bindings for terminal emulators.
@@ -130,12 +135,14 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **local-skill-creator**: Toolkit for creating and packaging your own skills locally.
 *   **pdf-to-markdown**: Convert PDF documents to LLM-friendly Markdown.
 *   **plugin-builder**: Build, package, and publish Claude Code plugins.
+*   **project-bootstrap**: Bootstrap Claude Code setup for greenfield (new) or brownfield (existing) projects with skills and agents.
 *   **uiverse**: Extract HTML and CSS code from UIVerse.io UI components.
 *   **v0-version-planner**: Planning tool for validating dependency versions before prototyping.
 *   **web-scraper**: Web scraping utility with Cloudflare bypass capabilities.
 
 ### Migration
 
+*   **claude-to-gemini-converter**: Convert Claude Code sub-agents to Gemini CLI format.
 *   **fastmcp-v3-migration**: Production-ready migration guide from FastMCP v2.x to v3.0.
 *   **node-to-bun-migration**: Guide for migrating Node.js projects to Bun.
 *   **node-to-deno-migration**: Guide for migrating Node.js projects to Deno 2.0+.
@@ -147,7 +154,16 @@ This repository includes a variety of skills located in the `skills/` directory:
 
 ### Game Development
 
+*   **better-hud**: BetterHud Minecraft HUD plugin development with YAML configurations and Java API integration.
+*   **bettermodel**: Modern Bedrock model engine for Minecraft Java Edition with BlockBench model rendering and animation.
+*   **craft-engine**: Configuration reference for CraftEngine, a Paper/Folia Minecraft server plugin for custom blocks, items, recipes, and furniture.
 *   **minecraft-fabric-dev**: Minecraft mod development with Fabric, including porting from Forge/NeoForge.
+*   **mineflayer**: Create powerful Minecraft bots with JavaScript using the Mineflayer API for automating gameplay, pathfinding, and server interaction.
+*   **paper-plugin-dev**: Paper Minecraft server plugin development skill with Paper API, Brigadier commands, and Folia support.
+
+### Reverse Engineering
+
+*   **ghidra-plugin-dev**: Ghidra plugin and script development toolkit covering GhidraScript API, headless analyzer, debugger scripting, and emulation.
 
 ## Usage
 

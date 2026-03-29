@@ -1,6 +1,6 @@
 # Agent Skills
 
-This repository contains 80 skills organized into 29 categories.
+This repository contains 90 skills organized into 29 categories.
 
 ## Skills
 
@@ -103,6 +103,12 @@ This repository contains 80 skills organized into 29 categories.
 **Description:** Professional-grade Python development with Ruff (v0.14.10) - an extremely fast Python linter and formatter. Use when working with Python codebases for (1) linting and fixing code quality issues, (2) formatting Python code, (3) configuring Ruff settings, (4) understanding and resolving specific rule violations, (5) integrating Ruff into projects or editors, (6) migrating from other tools (Black, Flake8, isort, etc.), or (7) any Ruff-related development tasks. Includes complete documentation for 937+ lint rules, formatter settings, configuration options, and editor integrations.
 
 **Resources:** 956 references • 3 Python scripts
+
+#### textual
+
+**Description:** Python TUI framework for building sophisticated terminal applications. Use when building terminal user interfaces, TUI apps, Rich-based console applications, or working with the Textual framework. Covers Textual CSS, widgets, reactive state, events, workers, screens, layout, animations, and testing. Triggers on mentions of Textual, terminal UI, TUI framework, or building interactive terminal apps.
+
+**Resources:** 633 references
 
 ### TypeScript Development
 
@@ -310,6 +316,12 @@ This repository contains 80 skills organized into 29 categories.
 
 ### MCP Tools
 
+#### agent-client-protocol
+
+**Description:** Build ACP-compliant agents (AI coding assistants) and clients (editors/IDEs) in TypeScript, Python, Kotlin, or Rust. Use when implementing AI coding agents, editor integrations, or any software that communicates via the Agent Client Protocol. Supports both local (stdio) and remote (HTTP/WebSocket) transports.
+
+**Resources:** 398 references
+
 #### mcp-setup
 
 **Description:** Set up MCP (Model Context Protocol) servers in Claude Code workspaces for testing. Use this skill when a user provides a local file path to an MCP server, a GitHub repository URL containing an MCP server, or asks to configure/install/set up an MCP server for testing. Handles creating .mcp.json configuration, cloning repositories, and guiding users through the setup process.
@@ -327,6 +339,12 @@ This repository contains 80 skills organized into 29 categories.
 **Resources:** 15 references • 4 TypeScript scripts
 
 ### Migration Tools
+
+#### claude-to-gemini-converter
+
+**Description:** Convert Claude Code sub-agents to Gemini CLI format. Use when migrating agents between platforms or when the user mentions converting, migrating, or translating Claude agents to Gemini CLI format.
+
+**Resources:** 1 reference • 2 Python scripts
 
 #### fastmcp-v3-migration
 
@@ -362,6 +380,12 @@ This repository contains 80 skills organized into 29 categories.
 
 **Description:** Deep code review and cleanup workflow for performing a final quality pass before committing code or opening pull requests. Use when the user wants to review and clean up a codebase to ensure production-ready quality, eliminate technical debt, remove debug code, simplify overcomplicated logic, or prepare code for public repository contribution. Triggers include "final pass", "cleanup before commit", "review before PR", "clean up this code", "prepare for production", or any request to audit and improve code quality across a project.
 
+#### spotless-java
+
+**Description:** Production-grade Java code formatting and quality enforcement using Spotless with Google Java Format. Use when (1) setting up code formatting in Java projects, (2) configuring Gradle or Maven build files for code style enforcement, (3) implementing Google Java Style Guide or AOSP style, (4) adding pre-commit formatting checks, (5) fixing "code not formatted" errors in CI/CD, or (6) questions about java formatting configuration with spotless, google-java-format, or code style automation.
+
+**Resources:** 3 references
+
 ### Design
 
 #### modern-frontend-design
@@ -371,6 +395,12 @@ This repository contains 80 skills organized into 29 categories.
 **Resources:** 7 references
 
 ### Terminal & CLI
+
+#### charm-tui
+
+**Description:** Build beautiful Terminal User Interfaces (TUIs) in Go using the Charmbracelet ecosystem. Use when developing CLI applications with interactive interfaces, terminal styling, forms, animations, or markdown rendering. Includes Bubble Tea (TUI framework), Lip Gloss (styling), Bubbles (UI components), Huh (forms), Glamour (markdown), Log (logging), and Harmonica (animations). Triggers for any Go TUI development, terminal styling, or when user mentions Charm, Charmbracelet, or Bubble Tea.
+
+**Resources:** 7 references
 
 #### github-cli
 
@@ -427,6 +457,12 @@ This repository contains 80 skills organized into 29 categories.
 **Description:** Build Claude Code plugins from scratch or by composing existing skills. Use when creating new plugins, converting skills to plugins, adding commands/agents/hooks/MCP servers to plugins, packaging plugins for distribution, or publishing plugins to marketplaces. Triggers include requests to create a plugin, make a Claude Code extension, add commands or agents, set up hooks, configure MCP servers, test plugins locally, create a marketplace, publish plugins, or distribute plugins to teams.
 
 **Resources:** 4 references • 3 Python scripts
+
+#### project-bootstrap
+
+**Description:** Bootstrap Claude Code setup for greenfield (new) or brownfield (existing) projects. Automatically detects project type, copies relevant skills from your skill library, and creates engineer agents with best practices skills. Use when starting work on a new project or wanting to upgrade an existing project's Claude Code setup with skills and agents.
+
+**Resources:** 2 references • 2 Python scripts
 
 #### uiverse
 
@@ -508,9 +544,33 @@ This repository contains 80 skills organized into 29 categories.
 
 ### Game Dev
 
+#### better-hud
+
+**Description:** BetterHud Minecraft HUD plugin development. Use when working with BetterHud YAML configurations (images, layouts, HUDs, popups, placeholders, conditions, animations, fonts) or Java API integration (Bukkit/Fabric). Triggers for creating custom health bars, skill cooldowns, boss health displays, party HUDs, buff icons, or any Minecraft HUD element. Supports both config authoring and plugin API development.
+
+**Resources:** 97 references
+
+#### bettermodel
+
+**Description:** "BetterModel - Modern Bedrock model engine for Minecraft Java Edition. Server-based BlockBench model rendering and animation using item display entity packets. Use when working with BetterModel plugin API, creating custom mob models from BlockBench (.bbmodel) files, animating entities in Minecraft, implementing player model animations, configuring hitboxes/nametags/shadows, integrating with MythicMobs/Citizens2/CraftEngine, or any Minecraft plugin development involving BetterModel's API (io.github.toxicity188:bettermodel-bukkit-api). Supports Bukkit/Paper/Spigot/Folia/Fabric platforms."
+
+**Resources:** 35 references
+
+#### craft-engine
+
+**Description:** Comprehensive configuration reference for CraftEngine, a Paper/Folia Minecraft server plugin for creating custom blocks, items, recipes, and furniture through YAML/JSON configuration. Use when working with CraftEngine configs, creating custom Minecraft content (blocks, items, recipes, furniture), troubleshooting CraftEngine setups, or developing plugins that integrate with CraftEngine API.
+
+**Resources:** 114 references • 1 Python script
+
 #### minecraft-fabric-dev
 
 **Description:** Comprehensive guidance for Minecraft mod development with Fabric, including porting from other mod loaders (Forge, NeoForge). Integrates MCP servers for decompilation, documentation access, and mixin validation. Use when developing Fabric mods, porting from Forge, or working with Minecraft source code.
+
+#### paper-plugin-dev
+
+**Description:** Paper Minecraft server plugin development skill. Use when creating, modifying, or debugging Paper plugins. Triggers on: plugin.yml, paper-plugin.yml, JavaPlugin, Brigadier commands, Bukkit events, Paper API, Minecraft server-side development, Folia support, scheduler tasks, entity manipulation, Adventure components.
+
+**Resources:** 65 references
 
 ### Java Dev
 
