@@ -1,0 +1,42 @@
+workflow:
+  name: skill-category-suggester
+  mode: dag
+  onError: skip_dependents
+
+  agents:
+    scan:
+      ref: worker
+      model: zai/glm-5-turbo
+      task: |
+        Scan the workspace root for .skill files.
+        1. Run: ls *.skill 2>/dev/null
+        2. If no .skill files are found, call task_complete with status: completed and summary: "NO_NEW_SKILLS"
+        3. If .skill files are found, call task_complete with status: completed and summary set to a JSON array of filenames, e.g.: ["file-a.skill","file-b.skill"]
+        IMPORTANT: The summary must be either the exact string "NO_NEW_SKILLS" or a JSON array of filename strings. Do NOT add any extra commentary.
+
+    inspect:
+      ref: worker
+      model: zai/glm-5-turbo
+      waits_for: [scan]
+      task: |
+        Suggest a category placement for each .skill file found at the workspace root.
+
+        You receive the scan results from the previous step: ${scan}
+
+        If the value is "NO_NEW_SKILLS", call task_complete with status: completed and summary: "NO_NEW_SKILLS". Stop here.
+
+        Otherwise, the value is a JSON array of filenames like: ["file-a.skill","file-b.skill"]
+
+        For each .skill file, do the following:
+        1. Run: python scripts/skill_info.py <filename.skill> --json — to get the skill's name, description, reference count, script count, total files, and nesting issues.
+        2. Discover available category folders by running: ls -d skills/*/ | sed 's|skills/||;s|/||' | sort
+        3. Based on the skill's name and description, pick the best existing category folder from the list. If nothing fits well, suggest a new kebab-case category name and set is_new_category to true.
+
+        After processing all files, call task_complete with status: completed and summary set to a JSON array with this exact shape:
+        [{"file":"filename.skill","name":"skill-name","description":"Brief description","suggested_category":"category-folder-name","is_new_category":false}]
+
+        Rules:
+        - Every file from the input array MUST appear in the output array
+        - suggested_category must be kebab-case (lowercase, hyphens)
+        - is_new_category is true only if no existing category fits
+        - Do NOT add extra commentary — the summary must be ONLY the JSON array

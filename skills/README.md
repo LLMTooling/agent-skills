@@ -1,6 +1,6 @@
 # Agent Skills
 
-This repository contains 90 skills organized into 29 categories.
+This repository contains 95 skills organized into 30 categories.
 
 ## Skills
 
@@ -322,6 +322,12 @@ This repository contains 90 skills organized into 29 categories.
 
 **Resources:** 398 references
 
+#### fastmcp-sdk
+
+**Description:** FastMCP Python SDK for building MCP (Model Context Protocol) servers, clients, and applications. Use when working with FastMCP to create MCP servers with tools, resources, and prompts; connecting to MCP servers with the FastMCP client; building interactive apps with Prefab UI or custom HTML; implementing authentication (OAuth, bearer tokens, JWT); deploying MCP servers via HTTP, SSE, or stdio; or integrating with Claude Desktop, Cursor, Anthropic API, or other MCP hosts. This is the standard framework for building MCP applications in Python.
+
+**Resources:** 16 references
+
 #### mcp-setup
 
 **Description:** Set up MCP (Model Context Protocol) servers in Claude Code workspaces for testing. Use this skill when a user provides a local file path to an MCP server, a GitHub repository URL containing an MCP server, or asks to configure/install/set up an MCP server for testing. Handles creating .mcp.json configuration, cloning repositories, and guiding users through the setup process.
@@ -500,6 +506,18 @@ This repository contains 90 skills organized into 29 categories.
 
 ### Apis Services
 
+#### discord-user-api
+
+**Description:** "Unofficial Discord user API documentation from discord-userdoccers. Covers the user-side Discord API (not the bot API) — authentication with email/password, user token management, REST endpoints, gateway events, OAuth2, RPC, and all resource objects. Use when building self-bots, user clients, custom Discord integrations, or when needing Discord API details that differ from the official bot documentation. Includes: channels, guilds, messages, users, voice, interactions, presence, store/billing, experiments, permissions, and more."
+
+**Resources:** 75 references
+
+#### discordjs
+
+**Description:** "Discord.js v14+ bot development assistant. Use when working with discord.js Node.js bots for: creating bots, slash commands, interactions, buttons, select menus, embeds, modals, context menus, events, voice, sharding, permissions, intents, error handling, collectors, or any discord.js development. Covers @discordjs/voice, builders, collection, and related packages."
+
+**Resources:** 1710 references
+
 #### google-tasks-api
 
 **Description:** Complete integration guide for Google Tasks API v12.0.0 using @googleapis/tasks npm package. Use when implementing Google Tasks integration in Node.js/TypeScript applications, managing tasks and task lists programmatically, setting up OAuth2 or service account authentication for Google Tasks, working with task assignment from Google Docs or Chat Spaces, or building task management features, todo apps, or productivity tools. Includes complete REST API reference, TypeScript type definitions, authentication patterns, error handling, and production-ready code examples from official Google documentation.
@@ -560,6 +578,18 @@ This repository contains 90 skills organized into 29 categories.
 
 **Description:** Comprehensive guidance for Minecraft mod development with Fabric, including porting from other mod loaders (Forge, NeoForge). Integrates MCP servers for decompilation, documentation access, and mixin validation. Use when developing Fabric mods, porting from Forge, or working with Minecraft source code.
 
+#### mineflayer
+
+**Description:** Create powerful Minecraft bots with JavaScript using the Mineflayer API. Use when building Minecraft bots, automating gameplay, creating chat bots, pathfinding, combat bots, farming automation, inventory management, or any interaction with Minecraft servers via bot clients. Supports both online (Microsoft/Mojang auth) and offline mode servers.
+
+**Resources:** 9 references
+
+#### nexomc
+
+**Description:** "NexoMC Minecraft plugin expertise for configuring custom items, blocks, furniture, armor, glyphs, sounds, and mechanics. Use when working with the Nexo plugin for Minecraft servers: creating YAML configs for custom items, resource pack generation, furniture mechanics, custom blocks, player armor, glyphs/hud, dialogs, recipes, migration from Oraxen/ItemsAdder, addon integration, or API development. Covers Paper/Folia 1.20.6+ through 1.21.x."
+
+**Resources:** 63 references
+
 #### paper-plugin-dev
 
 **Description:** Paper Minecraft server plugin development skill. Use when creating, modifying, or debugging Paper plugins. Triggers on: plugin.yml, paper-plugin.yml, JavaPlugin, Brigadier commands, Bukkit events, Paper API, Minecraft server-side development, Folia support, scheduler tasks, entity manipulation, Adventure components.
@@ -577,6 +607,14 @@ This repository contains 90 skills organized into 29 categories.
 **Description:** Comprehensive JUnit 6 testing framework skill for Java/JVM. Use when working with JUnit tests, annotations, assertions, extensions, parameterized tests, or build tool configuration. Covers JUnit Platform, Jupiter, and Vintage. Trigger for questions about @Test, @BeforeEach, @AfterEach, assertions, assumptions, test lifecycle, parallel execution, dependency injection, migrating from JUnit 4, Gradle/Maven/Ant configuration, IDE support, console launcher, or extension development.
 
 **Resources:** 63 references • 1 Python script
+
+### Reverse Engineering
+
+#### ghidra-plugin-dev
+
+**Description:** Ghidra plugin and script development toolkit. Use when developing Ghidra plugins, scripts, analyzers, loaders, or extensions. Covers the GhidraScript API, headless analyzer usage, plugin architecture, debugger scripting, and emulation capabilities. Essential for tasks involving Ghidra automation, custom analysis tools, binary format handling, or extending Ghidra's functionality.
+
+**Resources:** 34 references
 
 ### Tauri
 

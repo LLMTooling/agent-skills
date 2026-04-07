@@ -91,6 +91,8 @@ This repository includes a variety of skills located in the `skills/` directory:
 
 ### APIs & Services
 
+*   **discord-user-api**: Unofficial Discord user API documentation covering authentication, REST endpoints, gateway events, OAuth2, RPC, and resource objects.
+*   **discordjs**: Discord.js v14+ bot development assistant for creating bots, slash commands, interactions, buttons, embeds, modals, and more.
 *   **google-tasks-api**: Complete integration guide for Google Tasks API using @googleapis/tasks npm package for Node.js/TypeScript.
 
 ### AI & LLM Integration
@@ -158,6 +160,7 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **craft-engine**: Configuration reference for CraftEngine, a Paper/Folia Minecraft server plugin for custom blocks, items, recipes, and furniture.
 *   **minecraft-fabric-dev**: Minecraft mod development with Fabric, including porting from Forge/NeoForge.
 *   **mineflayer**: Create powerful Minecraft bots with JavaScript using the Mineflayer API for automating gameplay, pathfinding, and server interaction.
+*   **nexomc**: NexoMC Minecraft plugin expertise for configuring custom items, blocks, furniture, armor, glyphs, sounds, and mechanics.
 *   **paper-plugin-dev**: Paper Minecraft server plugin development skill with Paper API, Brigadier commands, and Folia support.
 
 ### Reverse Engineering
