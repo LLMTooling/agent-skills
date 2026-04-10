@@ -1,6 +1,6 @@
 # Agent Skills
 
-This repository contains 95 skills organized into 30 categories.
+This repository contains 96 skills organized into 30 categories.
 
 ## Skills
 
@@ -573,6 +573,12 @@ This repository contains 95 skills organized into 30 categories.
 **Description:** Comprehensive configuration reference for CraftEngine, a Paper/Folia Minecraft server plugin for creating custom blocks, items, recipes, and furniture through YAML/JSON configuration. Use when working with CraftEngine configs, creating custom Minecraft content (blocks, items, recipes, furniture), troubleshooting CraftEngine setups, or developing plugins that integrate with CraftEngine API.
 
 **Resources:** 114 references • 1 Python script
+
+#### meteor-addon
+
+**Description:** Meteor Client addon development for Minecraft. Use when creating, updating, or working with Meteor Client addons - a Fabric mod framework for Minecraft. Covers workspace setup from the template repository, build configuration with Gradle Kotlin DSL and version catalogs, updating addons when Minecraft/Meteor versions change, finding reference implementations from verified addons, and understanding Meteor's addon structure, APIs, and threading model.
+
+**Resources:** 2 references • 2 Python scripts
 
 #### minecraft-fabric-dev
 

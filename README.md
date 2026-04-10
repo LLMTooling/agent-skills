@@ -158,6 +158,7 @@ This repository includes a variety of skills located in the `skills/` directory:
 *   **better-hud**: BetterHud Minecraft HUD plugin development with YAML configurations and Java API integration.
 *   **bettermodel**: Modern Bedrock model engine for Minecraft Java Edition with BlockBench model rendering and animation.
 *   **craft-engine**: Configuration reference for CraftEngine, a Paper/Folia Minecraft server plugin for custom blocks, items, recipes, and furniture.
+*   **meteor-addon**: Meteor Client addon development for Minecraft - a Fabric mod framework.
 *   **minecraft-fabric-dev**: Minecraft mod development with Fabric, including porting from Forge/NeoForge.
 *   **mineflayer**: Create powerful Minecraft bots with JavaScript using the Mineflayer API for automating gameplay, pathfinding, and server interaction.
 *   **nexomc**: NexoMC Minecraft plugin expertise for configuring custom items, blocks, furniture, armor, glyphs, sounds, and mechanics.

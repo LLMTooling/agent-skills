@@ -1,0 +1,127 @@
+workflow:
+  name: skill-triage
+  mode: dag
+  onError: skip_dependents
+
+  agents:
+    scan:
+      ref: worker
+      model: zai/glm-5-turbo
+      task: |
+        Scan the workspace root for .skill files.
+        1. Run: ls *.skill 2>/dev/null
+        2. If no .skill files are found, call task_complete with status: completed and summary: "NO_NEW_SKILLS"
+        3. If .skill files are found, call task_complete with status: completed and summary set to a JSON array of filenames, e.g.: ["file-a.skill","file-b.skill"]
+        IMPORTANT: The summary must be either the exact string "NO_NEW_SKILLS" or a JSON array of filename strings. Do NOT add any extra commentary.
+
+    inspect:
+      ref: worker
+      model: zai/glm-5-turbo
+      waits_for: [scan]
+      task: |
+        Suggest a category placement for each .skill file found at the workspace root.
+
+        You receive the scan results from the previous step: ${scan}
+
+        If the value is "NO_NEW_SKILLS", call task_complete with status: completed and summary: "NO_NEW_SKILLS". Stop here.
+
+        Otherwise, the value is a JSON array of filenames like: ["file-a.skill","file-b.skill"]
+
+        For each .skill file, do the following:
+        1. Run: python scripts/skill_info.py <filename.skill> --json — to get the skill's name, description, reference count, script count, total files, and nesting issues.
+        2. Discover available category folders by running: ls -d skills/*/ | sed 's|skills/||;s|/||' | sort
+        3. Based on the skill's name and description, pick the best existing category folder from the list. If nothing fits well, suggest a new kebab-case category name and set is_new_category to true.
+
+        After processing all files, call task_complete with status: completed and summary set to a JSON array with this exact shape:
+        [{"file":"filename.skill","name":"skill-name","description":"Brief description","suggested_category":"category-folder-name","is_new_category":false}]
+
+        Rules:
+        - Every file from the input array MUST appear in the output array
+        - suggested_category must be kebab-case (lowercase, hyphens)
+        - is_new_category is true only if no existing category fits
+        - Do NOT add extra commentary — the summary must be ONLY the JSON array
+
+    place:
+      ref: worker
+      model: zai/glm-5-turbo
+      waits_for: [inspect]
+      task: |
+        Move .skill files from the workspace root into their suggested category directories.
+
+        You receive the inspect results: ${inspect}
+
+        If the value is "NO_NEW_SKILLS", call task_complete with status: completed and summary: "NO_NEW_SKILLS". Stop here.
+
+        Otherwise, the value is a JSON array like:
+        [{"file":"filename.skill","name":"skill-name","description":"...","suggested_category":"category-folder-name","is_new_category":false}]
+
+        For each entry in the array, perform these steps in order:
+        1. If is_new_category is true, create the directory: mkdir -p skills/<suggested_category>
+        2. MOVE (not copy) the file from the workspace root into the category:
+           mv <file> skills/<suggested_category>/<file>
+           Use the exact filename from the "file" field. The file is at the workspace root.
+        3. Verify the move succeeded: ls skills/<suggested_category>/<file>
+           Also verify the original is gone: ls <file> — this should fail (file not found).
+
+        After all files are moved:
+        4. Run both audit scripts to verify packaging integrity:
+           python scripts/audit_skills.py
+           python scripts/audit_skill_integrity.py
+        5. If any audit fails, call task_complete with status: failed and include the audit error output.
+
+        On success, call task_complete with status: completed and summary set to a JSON array of placed skills:
+        [{"file":"filename.skill","name":"skill-name","description":"...","category":"category-folder-name"}]
+
+    generate:
+      ref: worker
+      model: zai/glm-5-turbo
+      waits_for: [place]
+      task: |
+        Regenerate the skills directory README using the existing generate_readme.py script.
+
+        You receive the place results: ${place}
+
+        If the value is "NO_NEW_SKILLS", call task_complete with status: completed and summary: "{\"generated\":false,\"new_skills\":[]}"
+
+        1. Run: cd skills && python generate_readme.py
+        2. Verify the command completes without errors.
+        3. Call task_complete with status: completed and summary set to:
+           {"generated":true,"new_skills":<forward the place summary JSON array here>}
+
+    update_main:
+      ref: worker
+      model: zai/glm-5-turbo
+      waits_for: [generate]
+      task: |
+        Update the main README.md with any new skills that are not yet listed.
+
+        You receive the generate results: ${generate}
+
+        Parse the summary JSON. If new_skills is an empty array, call task_complete with status: completed and summary: "No new skills to add."
+
+        Otherwise, new_skills contains a JSON array of newly placed skills:
+        [{"file":"filename.skill","name":"skill-name","description":"...","category":"category-folder-name"}]
+
+        Steps:
+        1. Read README.md at the repository root.
+        2. Identify which skills are already listed (match by the bold skill name in bullet points).
+        3. Determine which new_skills are NOT yet in the README.
+        4. For each missing skill:
+           - Discover the correct section by reading the actual README heading structure — do NOT hardcode section names.
+           - Match the skill's category folder to the corresponding README section.
+           - If no matching section exists, create a new ### section following the same heading format.
+        5. Add each new skill as a bullet point in the correct section using this format:
+           *   **skill-name**: Brief description.
+        6. Within each affected section, sort all skill bullet points alphabetically by skill name.
+        7. Write the updated content to README.md using the edit tool.
+
+        8. Build an ASCII table of all newly added skills:
+            +----------------------------+----------------------------+-------------------------------------------+
+            | Category                   | Skill Name                 | Description                               |
+            +----------------------------+----------------------------+-------------------------------------------+
+            | category-folder-name       | skill-name                 | Brief description                         |
+            +----------------------------+----------------------------+-------------------------------------------+
+
+        Call task_complete with status: completed and ONLY the ASCII table as the summary.
+        IMPORTANT: The summary must be the ASCII table only — no commentary, no extra text.
+        IMPORTANT: Discover section names by reading the README. Never hardcode them.
